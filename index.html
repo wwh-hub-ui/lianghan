@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>两汉故事 · 目录</title>
+<style>
+:root{--ink:#1c1a17;--dim:#6b655d;--line:#ddd6cc;--bg:#faf7f2;--gold:#a8874f}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+ font-family:"Songti SC","Source Han Serif SC",Georgia,"PingFang SC",serif;
+ font-size:18px;line-height:1.95;letter-spacing:.01em}
+main{max-width:39em;margin:0 auto;padding:48px 24px 120px}
+h1{font-size:1.6em;line-height:1.42;margin:0 0 1em;font-weight:700}
+h2.sec{font-size:1.14em;margin:2.4em 0 .7em;padding-left:.6em;border-left:4px solid #b9a88a}
+p{margin:0 0 1.05em;text-align:justify}
+strong{font-weight:700}
+hr{border:0;border-top:1px solid var(--line);margin:2.6em 0}
+table{border-collapse:collapse;width:100%;margin:1.1em 0 1.5em;font-size:.94em}
+td{border-bottom:1px solid var(--line);padding:.5em .7em;vertical-align:top;line-height:1.7}
+td:first-child{color:var(--dim);white-space:nowrap;width:7.2em}
+sup.fn{font-size:.66em;line-height:0;color:var(--gold);cursor:pointer;
+ padding:0 .12em;font-family:system-ui,-apple-system,sans-serif}
+nav{display:flex;justify-content:space-between;gap:12px;margin:3.2em 0 0;
+ padding-top:1.4em;border-top:1px solid var(--line);font-size:.9em}
+nav a{color:var(--gold);text-decoration:none;padding:.5em .2em}
+nav a.dim{color:var(--line)}
+nav a.dir{color:var(--dim)}
+#nb{position:fixed;left:0;right:0;bottom:0;background:#fffdf9;border-top:1px solid var(--line);
+ box-shadow:0 -6px 24px rgba(0,0,0,.10);padding:16px 20px 20px;font-size:.92em;line-height:1.75;
+ color:#33302a;transform:translateY(110%);transition:transform .18s ease;z-index:9;
+ max-height:55vh;overflow:auto}
+#nb.on{transform:translateY(0)}
+#nb .no{color:var(--gold);font-weight:700;margin-right:.4em}
+#nb .x{float:right;color:var(--dim);cursor:pointer;font-size:1.1em;margin-left:1em}
+ol.toc{list-style:none;padding:0;margin:1.4em 0 0}
+ol.toc li{margin:0;border-bottom:1px solid var(--line)}
+ol.toc a{display:block;padding:.85em .2em;text-decoration:none;color:var(--ink)}
+ol.toc a .k{color:var(--gold);font-size:.82em;margin-right:.7em;
+ font-family:system-ui,-apple-system,sans-serif}
+ol.toc a .s{display:block;color:var(--dim);font-size:.82em;line-height:1.6;margin-top:.25em}
+ol.toc li.cur a .k{color:var(--ink)}
+.cover{text-align:left;margin-bottom:2.4em}
+.cover h1{font-size:2em;margin-bottom:.3em}
+.cover p{color:var(--dim);font-size:.92em}
+@media(max-width:640px){body{font-size:17px}main{padding:30px 18px 90px}}
+</style></head><body><main>
+<div class="cover"><h1>两汉故事</h1><p>从秦末到汉朝建立 · 全书 14 章<br>底本《史记》《汉书》 · 带脚注 · 可离线阅读</p></div><ol class="toc"><li><a href="ch/intro.html"><span class="k">引子</span>写法与底本</a></li><li><a href="ch/people.html"><span class="k">人物表</span>先认清这些人<span class="s">一张表认清二十来个人</span></a></li><li><a href="ch/01.html"><span class="k">第一章</span>骊山路上：那批人一个接一个地不见了</a></li><li><a href="ch/02.html"><span class="k">第二章</span>大泽乡：九百人误了期</a></li><li><a href="ch/03.html"><span class="k">第三章</span>沛县的难题：谁来做首领</a></li><li><a href="ch/04.html"><span class="k">第四章</span>丰邑之叛：为什么老家的人先反了他</a></li><li><a href="ch/05.html"><span class="k">第五章</span>巨鹿之战：砸掉锅、凿沉船</a></li><li><a href="ch/06.html"><span class="k">第六章</span>刘邦西进：从高阳到霸上</a></li><li><a href="ch/07.html"><span class="k">第七章</span>鸿门宴</a></li><li><a href="ch/08.html"><span class="k">第八章</span>分封与汉中：为什么刘邦成了汉王</a></li><li><a href="ch/09.html"><span class="k">第九章</span>萧何追韩信</a></li><li><a href="ch/10.html"><span class="k">第十章</span>还定三秦与彭城之败</a></li><li><a href="ch/11.html"><span class="k">第十一章</span>荥阳相持：熬</a></li><li><a href="ch/12.html"><span class="k">第十二章</span>韩信北伐：从西河到齐地</a></li><li><a href="ch/13.html"><span class="k">第十三章</span>垓下：四面楚歌</a></li><li><a href="ch/14.html"><span class="k">第十四章</span>氾水之阳：一个亭长成了皇帝</a></li></ol>
+
+</main><script>
+(function(){
+ var box=document.createElement('div'); box.id='nb';
+ box.innerHTML='<span class="x" id="nbx">关闭 ✕</span><span id="nbt"></span>';
+ document.body.appendChild(box);
+ var N = window.NOTES || [];
+ function show(i){ document.getElementById('nbt').innerHTML='<span class="no">'+i+'</span>'+N[i-1]; box.classList.add('on'); }
+ document.addEventListener('click', function(e){
+   var sup=e.target.closest('sup.fn');
+   if(sup){ show(parseInt(sup.dataset.n,10)); e.stopPropagation(); return; }
+   if(!e.target.closest('#nb')) box.classList.remove('on');
+ });
+ document.getElementById('nbx').addEventListener('click', function(){ box.classList.remove('on'); });
+ document.addEventListener('keydown', function(e){ if(e.key==='Escape') box.classList.remove('on'); });
+})();
+</script></body></html>
