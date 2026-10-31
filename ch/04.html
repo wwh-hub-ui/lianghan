@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>丰邑之叛：为什么老家的人先反了他</title>
+<title>丰邑之叛：为什么老家的人先反了他</title><script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js" integrity="sha384-XmJ9SoHtVOHoQUcKvFAzVXwdkKo1Ie3bhmSoIAkcdsHGaIrVJIkmozyq0FJeb/Ly" crossorigin="anonymous"></script><script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js" integrity="sha384-wl5TeDVvOWt30Pbf8aSo2ZrzsOjddu3avOBvHe+p+OhJt9gP6w9YXmDkN5DK2/dF" crossorigin="anonymous"></script>
 <style>
 :root{--ink:#1c1a17;--dim:#6b655d;--line:#ddd6cc;--bg:#faf7f2;--gold:#a8874f}
 *{box-sizing:border-box}
@@ -43,9 +43,42 @@ ol.toc li.cur a .k{color:var(--ink)}
 .cover h1{font-size:2em;margin-bottom:.3em}
 .cover p{color:var(--dim);font-size:.92em}
 @media(max-width:640px){body{font-size:17px}main{padding:30px 18px 90px}}
-</style></head><body><main>
-<h1>丰邑之叛：为什么老家的人先反了他</h1>
-<h2 class="sec">一、一个不服气的人</h2>
+
+body.chapter-story{--ink:#25221d;--dim:#6f675d;--line:#ddd3c3;--bg:#f8f3e8;--gold:#a8874f;background:var(--bg)}
+body.chapter-story main{max-width:none;margin:0;padding:0}
+body.chapter-story .ch1-visual{display:none}
+body.chapter-story .ch1-layout{max-width:46em;margin:0 auto;padding:30px 20px 96px}
+body.chapter-story .ch1-copy{min-width:0}
+body.chapter-story .mobile-scene{display:block;margin:1.35em 0 1.65em}
+body.chapter-story .mobile-scene img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+body.chapter-story .mobile-scene figcaption{font:12px/1.6 system-ui,-apple-system,sans-serif;color:var(--dim);margin-top:7px}
+body.chapter-story .story-beat{scroll-margin-top:18vh}
+body.chapter-story .ch1-scene-caption{display:none}
+@media(min-width:961px) and (prefers-reduced-motion:no-preference){
+ body.chapter-story.motion-ready main{position:relative;z-index:1;padding:22px clamp(28px,3.5vw,60px) 96px}
+ body.chapter-story.motion-ready .ch1-visual{display:block;position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none}
+ body.chapter-story.motion-ready #chapter-canvas{position:absolute;inset:0;width:100%;height:100%;display:block;opacity:.86}
+ body.chapter-story.motion-ready .ch1-wash{position:absolute;inset:0;background:linear-gradient(90deg,rgba(248,243,232,.04) 0%,rgba(248,243,232,.02) 54%,rgba(56,43,28,.09) 100%)}
+ body.chapter-story.motion-ready .ch1-layout{display:grid;grid-template-columns:minmax(430px,45vw) minmax(0,1fr);gap:clamp(34px,5vw,82px);max-width:1500px;margin:0 auto;padding:22px 0 100px}
+ body.chapter-story.motion-ready .ch1-copy{grid-column:1;max-width:680px;padding:28px clamp(26px,3vw,44px);background:rgba(250,247,240,.91);border:1px solid rgba(171,148,112,.28);box-shadow:0 15px 46px rgba(43,32,20,.07);backdrop-filter:blur(6px)}
+ body.chapter-story.motion-ready .ch1-copy h1{font-size:clamp(27px,2.1vw,34px);margin-bottom:1.1em}
+ body.chapter-story.motion-ready .ch1-copy h2.sec{margin-top:2em}
+ body.chapter-story.motion-ready .ch1-scene-caption{display:block;position:fixed;right:clamp(24px,6vw,108px);top:50%;transform:translateY(-50%);width:min(28vw,390px);z-index:2;pointer-events:none;color:#403426;opacity:0}
+ body.chapter-story.motion-ready .scene-kicker{display:block;font:11px/1.5 system-ui,-apple-system,sans-serif;letter-spacing:.16em;color:#75634d;margin-bottom:13px}
+ body.chapter-story.motion-ready .scene-title{display:block;font-size:clamp(23px,2.4vw,38px);font-weight:500;line-height:1.35;text-wrap:balance}
+ body.chapter-story.motion-ready .scene-note{display:block;margin-top:12px;font:12px/1.65 system-ui,-apple-system,sans-serif;color:#756b5d;max-width:28em}
+}
+@media(max-width:960px),(prefers-reduced-motion:reduce){
+ body.chapter-story .ch1-visual,body.chapter-story .ch1-scene-caption{display:none!important}
+ body.chapter-story .ch1-layout{display:block;max-width:43em;padding:30px 20px 88px}
+}
+@media(max-width:640px){
+ body.chapter-story main{font-size:17px}
+ body.chapter-story .ch1-layout{padding:26px 18px 80px}
+}
+</style></head><body class="chapter-story" data-chapter-number="4"><main>
+<div class="ch1-visual" aria-hidden="true"><canvas id="chapter-canvas"></canvas><div class="ch1-wash"></div></div><div id="scene-caption" class="ch1-scene-caption" aria-hidden="true"><span id="scene-kicker" class="scene-kicker">第4章 · 01 / 08</span><strong id="scene-title" class="scene-title">本节标题</strong><span id="scene-note" class="scene-note">粒子由本节小标题生成 · 正文与史料说明保持完整</span></div><div class="ch1-layout"><article class="ch1-copy"><h1>丰邑之叛：为什么老家的人先反了他</h1>
+<section class="story-beat" data-beat="1"><h2 class="sec">一、一个不服气的人</h2><figure class="mobile-scene"><img src="assets/ch04/01-yongchi-envoy.webp" alt="魏国使者来丰邑见雍齿，雍齿在厅堂中听取口头劝降" loading="lazy"><figcaption>场景重构 · 一个不服气的人</figcaption></figure>
 <p>第二章说过，沛公带着二三千人出去打了几个地方，然后回来守丰邑。</p>
 <p>守丰邑要留人。他留下的人叫雍齿。</p>
 <p>《史记》关于雍齿的出身没写几句——他不是萧何那种能人，也不是樊哙那种死忠。他就是沛县一带的一个豪杰，跟刘邦是同一个圈子里的人。</p>
@@ -60,7 +93,7 @@ ol.toc li.cur a .k{color:var(--ink)}
 <p>这五个字很重要，因为它是这本书里第一次出现“自己人不服自己人”。你要明白刘邦这个首领是怎么来的——第三章里，他不是打出来的，是<strong>让</strong>出来的：萧何、曹参算过账，不肯当，他才当上。</p>
 <p>一个让出来的首领，压不住那些跟他平起平坐的同辈人。</p>
 <p>雍齿就是这么想的：凭什么你？</p>
-<h2 class="sec">二、自己的老家，打不下来</h2>
+</section><section class="story-beat" data-beat="2"><h2 class="sec">二、自己的老家，打不下来</h2><figure class="mobile-scene"><img src="assets/ch04/02-failed-assault.webp" alt="刘邦攻丰邑未克，因病由同伴扶着撤离仍紧闭的城门" loading="lazy"><figcaption>场景重构 · 自己的老家，打不下来</figcaption></figure>
 <p>沛公带兵回来攻丰邑。</p>
 <p>结果是：不能取。<sup class="fn" data-n="3">③</sup></p>
 <p>打不下来。</p>
@@ -72,20 +105,20 @@ ol.toc li.cur a .k{color:var(--ink)}
 <p>他听说东阳的甯君和秦嘉立了景驹做“假王”，驻扎在留县，就跑去投靠，想借兵打丰邑。接着跟秦军打，在萧县西边打输了；回头收拢人马，去打砀，打了三天才攻下来；收编了砀地的兵，凑到五六千人；又打下邑，打下来了；然后回头，再攻丰邑。<sup class="fn" data-n="4">④</sup></p>
 <p>这一段是沛公起事以来最狼狈的日子：自己的老家拿不下来，得四处依附别人，打了几个小地方，攒了五千人。</p>
 <p>也就是在这时候，他听说薛县来了一个人。</p>
-<h2 class="sec">三、去薛县见一个人</h2>
+</section><section class="story-beat" data-beat="3"><h2 class="sec">三、去薛县见一个人</h2><figure class="mobile-scene"><img src="assets/ch04/03-meeting-xiang-liang.webp" alt="三名骑者沿山路向远方行进。" loading="lazy"><figcaption>场景重构 · 赴薛途中</figcaption></figure>
 <p>那个人的名字叫项梁。</p>
 <p>沛公带着一百多个骑兵去见他。<sup class="fn" data-n="5">⑤</sup></p>
 <p>项梁给了他五千人和十名五大夫将。</p>
 <p>《史记》对这一面只写了这一句，但它是这本书的一个转折点：<strong>刘邦和项羽这两个名字，从这一刻起接上了。</strong></p>
 <p>在讲他们后来一起干了什么之前，得先把项家这两个人交代清楚——因为接下来这些年，天下真正的雇主是谁，得看这个人。</p>
-<h2 class="sec">四、三代的将门</h2>
+</section><section class="story-beat" data-beat="4"><h2 class="sec">四、三代的将门</h2><figure class="mobile-scene"><img src="assets/ch04/04-xiang-family.webp" alt="一名甲士倒在战场上，远处可见兵卒和旗帜。" loading="lazy"><figcaption>场景重构 · 追叙：项燕之死</figcaption></figure>
 <p>项梁是下相人。他们家的来历比刘邦家清楚得多。</p>
 <p>《史记》说：项氏世世为楚将，封于项，故姓项氏。</p>
 <p>项家世世代代是楚国的将军，封在项地，所以姓项。<sup class="fn" data-n="6">⑥</sup></p>
 <p>项梁的父亲叫项燕——就是第二章里陈胜借来当旗号的那位楚国名将。</p>
 <p>而项燕的结局是：为秦将王翦所戮。被秦国的将军王翦杀了。<sup class="fn" data-n="7">⑦</sup></p>
 <p>所以项梁身上背着两件事：楚国将军的家世，和被秦朝杀掉的父亲。他起兵的理由，比陈胜的“误了期”结实得多。</p>
-<h2 class="sec">五、一个学什么都学不成的年轻人</h2>
+</section><section class="story-beat" data-beat="5"><h2 class="sec">五、一个学什么都学不成的年轻人</h2><figure class="mobile-scene"><img src="assets/ch04/05-xiang-yu-study.webp" alt="项梁教项羽兵法，项羽起身离开，案上竹简未展开完" loading="lazy"><figcaption>场景重构 · 一个学什么都学不成的年轻人</figcaption></figure>
 <p>项梁有个侄子，叫项籍，字羽。后来天下更熟悉他的名字是项羽。</p>
 <p>《史记》写这个人，一开始写的不是他的战功，是他读书的事。</p>
 <p>项籍少时，学书不成，去。学剑，又不成。</p>
@@ -103,7 +136,7 @@ ol.toc li.cur a .k{color:var(--ink)}
 <p>在吴中，项梁成了当地的头面人物。有大事的时候——徭役、丧事——常常由他主办。而司马迁写了一句很要紧的话：阴以兵法部勒宾客及子弟，以是知其能。</p>
 <p>他暗地里用兵法来组织这些宾客和子弟，借着这个知道自己手下谁有本事。<sup class="fn" data-n="11">⑪</sup></p>
 <p><strong>也就是说：项梁在别人家办丧事的时候，已经在练兵了。</strong>等到天下真的乱起来，他手上不是一堆不认识的人，是一支他早就摸过底的队伍。</p>
-<h2 class="sec">六、杀太守那天</h2>
+</section><section class="story-beat" data-beat="6"><h2 class="sec">六、杀太守那天</h2><figure class="mobile-scene"><img src="assets/ch04/06-killing-governor.webp" alt="殷通在郡府与项梁谈话，项羽拔剑入内，项梁以眼色示意" loading="lazy"><figcaption>场景重构 · 杀太守那天</figcaption></figure>
 <p>秦二世元年九月，会稽郡的太守殷通找项梁来谈话。</p>
 <p>他说的是：江西皆反，此亦天亡秦之时也。吾闻先即制人，后则为人所制。</p>
 <p>长江以西全都反了，这是老天要灭秦的时候。我听说先动手的能制服别人，后动手的被人制服。<sup class="fn" data-n="12">⑫</sup></p>
@@ -118,7 +151,7 @@ ol.toc li.cur a .k{color:var(--ink)}
 <p>项籍一个人杀了几十上百人，整个郡府都趴下了。</p>
 <p>一个二十出头的年轻人，在别人家的郡府里，一个人镇住了一屋子人。<strong>这不是兵法，这是天赋——他“学万人敌”没学完，但他天生就会打仗。</strong></p>
 <p>项梁拿着太守的头，佩上太守的印，召集他早就认识的那些豪吏，说了自己要干的事，然后起兵。他派人去收下属各县，得精兵八千人。<sup class="fn" data-n="14">⑭</sup></p>
-<h2 class="sec">七、八千人渡江</h2>
+</section><section class="story-beat" data-beat="7"><h2 class="sec">七、八千人渡江</h2><figure class="mobile-scene"><img src="assets/ch04/07-huai-river-crossing.webp" alt="项梁在河岸指挥士卒乘木船渡河，队伍准备西进" loading="lazy"><figcaption>场景重构 · 八千人渡江</figcaption></figure>
 <p>有意思的是，起兵之后，项梁手上的第一件正经事，是<strong>名分</strong>的问题。</p>
 <p>有个叫召平的人从广陵来，假传陈胜的命令，拜项梁为“楚王上柱国”，让他赶紧带兵西进打秦。项梁就带着八千人渡江西进。<sup class="fn" data-n="15">⑮</sup></p>
 <p>渡江之后，他遇到了一个自己送上门的人。</p>
@@ -134,7 +167,7 @@ ol.toc li.cur a .k{color:var(--ink)}
 <p>再往后：秦嘉立了个楚王叫景驹，挡着项梁的路，项梁说他“倍陈王而立景驹，逆无道”，一战把他打散，秦嘉死，景驹逃到梁地死了。项梁又请来一个七十岁的老人叫范增，范增给他上了一课，讲的是“楚虽三户，亡秦必楚”，劝他一定要立楚国的后代。</p>
 <p>项梁听了。他派人到民间去找楚怀王的孙子——那人正在给人放羊——立为楚怀王。陈婴做了楚国的上柱国。项梁给自己上的号是“武信君”。<sup class="fn" data-n="18">⑱</sup></p>
 <p>一个放羊的年轻人，从此成了天下反秦的旗子。而牵着他的人，是项梁。</p>
-<h2 class="sec">八、并肩</h2>
+</section><section class="story-beat" data-beat="8"><h2 class="sec">八、并肩</h2><figure class="mobile-scene"><img src="assets/ch04/08-liu-xiang-chengyang.webp" alt="刘邦、项羽各率一支队伍在城阳城外准备攻城，彼此协同" loading="lazy"><figcaption>场景重构 · 并肩</figcaption></figure>
 <p>项梁的地盘和刘邦的地盘接上了之后，两个人开始一起打仗。</p>
 <p>《史记》里有一句很短的记载，你要留意：项梁使沛公及项羽别攻城阳，屠之。</p>
 <p>项梁派刘邦和项羽一起去打城阳，打下来之后，屠城。<sup class="fn" data-n="19">⑲</sup></p>
@@ -145,8 +178,8 @@ ol.toc li.cur a .k{color:var(--ink)}
 <p>天下刚起来的这面旗，折了。</p>
 <p>项梁一死，楚国的这支力量就交到了别人手里。而这一年，项羽二十四岁，刘邦四十八岁。</p>
 <p>下一章：巨鹿之战——砸掉锅、凿沉船。</p>
-<hr/>
-<nav><a href="03.html">← 第三章</a><a class="dir" href="../index.html">目录</a><a href="05.html">下一章：巨鹿之战 →</a></nav>
+<hr/></section><nav><a href="03.html">← 第三章</a><a class="dir" href="../index.html">目录</a><a href="05.html">下一章：巨鹿之战 →</a></nav></article></div>
+
 </main><script>window.NOTES=["原文：“陈王使魏人周市略地。周市使人谓雍齿曰：'丰，故梁徙也。今魏地已定者数十城。齿今下魏，魏以齿为侯守丰。不下，且屠丰。'”", "原文：“雍齿雅不欲属沛公，及魏招之，即反为魏守丰。”“雅”意为素来、本来。", "原文：“沛公引兵攻丰，不能取。沛公病，还之沛。”", "这一段见《史记·高祖本纪》。", "原文：“闻项梁在薛，从骑百馀往见之。项梁益沛公卒五千人，五大夫将十人。”", "原文：“项氏世世为楚将，封於项，故姓项氏。”", "原文：“梁父即楚将项燕，为秦将王翦所戮者也。”项梁是项籍的季父，也就是小叔。", "原文：“书足以记名姓而已。剑一人敌，不足学，学万人敌。”", "原文：“於是项梁乃教籍兵法，籍大喜，略知其意，又不肯竟学。”", "原文：“项梁杀人，与籍避仇於吴中。”", "原文：“每吴中有大繇役及丧，项梁常为主办，阴以兵法部勒宾客及子弟，以是知其能。”", "原文：“秦二世元年七月，陈胜等起大泽中。其九月，会稽守通谓梁曰：'江西皆反，此亦天亡秦之时也。吾闻先即制人，後则为人所制。吾欲发兵，使公及桓楚将。'”秦二世元年七月起大泽乡，九月项梁在会稽动手——中间只隔了两个月。", "原文：“须臾，梁眴籍曰：'可行矣！'於是籍遂拔剑斩守头。”", "原文：“使人收下县，得精兵八千人。”", "原文：“广陵人召平於是为陈王徇广陵，未能下。闻陈王败走，秦兵又且至，乃渡江矫陈王命，拜梁为楚王上柱国。”", "原文见《史记·项羽本纪》。", "原文：“项梁渡淮，黥布、蒲将军亦以兵属焉。凡六七万人，军下邳。”", "原文：“乃求楚怀王孙心民间，为人牧羊，立以为楚怀王，从民所望也。陈婴为楚上柱国，封五县，与怀王都盱台。项梁自号为武信君。”", "原文：“项梁使沛公及项羽别攻城阳，屠之。”", "原文：“沛公与项羽西略地至雍丘之下，与秦军战，大破之，斩李由。”", "原文：“项梁再破秦军，有骄色。宋义谏，不听。秦益章邯兵，夜衔枚击项梁，大破之定陶，项梁死。”"];</script><script>
 (function(){
  var box=document.createElement('div'); box.id='nb';
@@ -161,5 +194,272 @@ ol.toc li.cur a .k{color:var(--ink)}
  });
  document.getElementById('nbx').addEventListener('click', function(){ box.classList.remove('on'); });
  document.addEventListener('keydown', function(e){ if(e.key==='Escape') box.classList.remove('on'); });
+})();
+</script><script type="module">import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.186.1/build/three.module.js";
+import { chapterProgressAtScroll } from "./assets/ch01/chapter_one_progress.mjs";
+import { particleTargetFromMask } from "./assets/chapter_story_targets.mjs";
+
+(function () {
+  const mediaQuery = "(min-width:961px) and (prefers-reduced-motion: no-preference)";
+  const chapterNumber = Number(document.body.dataset.chapterNumber) || 0;
+
+  function start() {
+    if (!window.gsap || !window.ScrollTrigger) return;
+    gsap.registerPlugin(ScrollTrigger);
+    const body = document.body;
+    const media = gsap.matchMedia();
+
+    media.add(mediaQuery, function () {
+      const canvas = document.getElementById("chapter-canvas");
+      const article = document.querySelector(".ch1-copy");
+      const beats = Array.from(document.querySelectorAll(".story-beat"));
+      const caption = document.getElementById("scene-caption");
+      const kicker = document.getElementById("scene-kicker");
+      const title = document.getElementById("scene-title");
+      const note = document.getElementById("scene-note");
+      if (!canvas || !article || beats.length === 0 || beats.length > 10) return;
+
+      const labels = beats.map((beat) => beat.querySelector("h2.sec")?.textContent.trim() || "本节");
+      let renderer;
+      try {
+        renderer = new THREE.WebGLRenderer({
+          canvas,
+          alpha: true,
+          antialias: true,
+          powerPreference: "low-power",
+        });
+      } catch (_error) {
+        return;
+      }
+
+      const pixelRatio = Math.min(window.devicePixelRatio || 1, 1.35);
+      const pointCount = window.innerWidth < 1200 ? 12000 : 16000;
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(38, 1, 0.1, 50);
+      camera.position.set(0, 0, 7.8);
+      camera.lookAt(0, 0, 0);
+      renderer.setPixelRatio(pixelRatio);
+      renderer.setSize(window.innerWidth, window.innerHeight, false);
+      renderer.setClearColor(0x000000, 0);
+      renderer.outputColorSpace = THREE.SRGBColorSpace;
+
+      function random(index, salt) {
+        const value = Math.sin((index + 1) * 12.9898 + (salt + 1) * 78.233) * 43758.5453;
+        return value - Math.floor(value);
+      }
+      function writePoint(target, index, x, y, z) {
+        const offset = index * 3;
+        target[offset] = x;
+        target[offset + 1] = y;
+        target[offset + 2] = z;
+      }
+      function makeInitialCloud(count) {
+        const positions = new Float32Array(count * 3);
+        for (let i = 0; i < count; i += 1) {
+          writePoint(positions, i, (random(i, 11) - 0.5) * 5.2, (random(i, 12) - 0.5) * 2.4, (random(i, 13) - 0.5) * 1.1);
+        }
+        return positions;
+      }
+      function makeTextTarget(label, count, salt) {
+        const mask = document.createElement("canvas");
+        mask.width = 920;
+        mask.height = 270;
+        const context = mask.getContext("2d", { willReadFrequently: true });
+        if (!context) throw new Error("Canvas 2D mask context is unavailable");
+        context.clearRect(0, 0, mask.width, mask.height);
+        context.fillStyle = "#fff";
+        context.textAlign = "center";
+        context.textBaseline = "middle";
+        let size = 92;
+        const fontStack = '"Songti SC", "Noto Serif CJK SC", "STSong", serif';
+        while (size > 44) {
+          context.font = `600 ${size}px ${fontStack}`;
+          if (context.measureText(label).width <= 840) break;
+          size -= 4;
+        }
+        context.font = `600 ${size}px ${fontStack}`;
+        context.fillText(label, mask.width * 0.5, mask.height * 0.5, 840);
+        const image = context.getImageData(0, 0, mask.width, mask.height);
+        return particleTargetFromMask(image.data, mask.width, mask.height, count, salt);
+      }
+
+      const initial = makeInitialCloud(pointCount);
+      const targets = labels.map((label, index) => makeTextTarget(label, pointCount, index + chapterNumber * 17));
+      const seeds = new Float32Array(pointCount);
+      for (let i = 0; i < pointCount; i += 1) seeds[i] = random(i, chapterNumber + 31);
+
+      const geometry = new THREE.BufferGeometry();
+      geometry.setAttribute("position", new THREE.BufferAttribute(initial, 3));
+      targets.forEach((target, index) => geometry.setAttribute(`aShape${index + 1}`, new THREE.BufferAttribute(target, 3)));
+      geometry.setAttribute("aSeed", new THREE.BufferAttribute(seeds, 1));
+      geometry.computeBoundingSphere();
+
+      const uniforms = {
+        uProgress: { value: 0 },
+        uTime: { value: 0 },
+        uPixelRatio: { value: pixelRatio },
+      };
+      const shapeAttributes = targets.map((_target, index) => `attribute vec3 aShape${index + 1};`).join("\n");
+      const shapeBranches = targets.map((_target, index) => `if (shapeIndex < ${index + 1}.5) return aShape${index + 1};`).join("\n          ");
+      const lastShape = targets.length;
+      const vertexShader = `
+        precision highp float;
+        ${shapeAttributes}
+        attribute float aSeed;
+        uniform float uProgress;
+        uniform float uTime;
+        uniform float uPixelRatio;
+        varying float vAlpha;
+        varying vec3 vColor;
+        const float PI = 3.14159265359;
+
+        vec3 curlField(vec3 p, float t) {
+          return vec3(
+            -1.2 * sin(p.x * 1.4 + t) * sin(p.y * 1.2 - t) - 1.5 * cos(p.z * 1.5 - t) * cos(p.x * 1.1 + t),
+            -1.3 * sin(p.y * 1.7 + t) * sin(p.z * 1.3 - t) - 1.4 * cos(p.x * 1.4 + t) * cos(p.y * 1.2 - t),
+            -1.1 * sin(p.z * 1.5 - t) * sin(p.x * 1.1 + t) - 1.7 * cos(p.y * 1.7 + t) * cos(p.z * 1.3 - t)
+          );
+        }
+        vec3 shapeAt(float shapeIndex) {
+          if (shapeIndex < 0.5) return position;
+          ${shapeBranches}
+          return aShape${lastShape};
+        }
+        void main() {
+          float progress = clamp(uProgress, 0.0, ${lastShape.toFixed(1)});
+          float segment = min(floor(progress), ${(lastShape - 1).toFixed(1)});
+          float localProgress = clamp(progress - segment, 0.0, 1.0);
+          vec3 fromShape = shapeAt(segment);
+          vec3 toShape = shapeAt(segment + 1.0);
+          vec3 p = mix(fromShape, toShape, smoothstep(0.0, 1.0, localProgress));
+          float turbulence = sin(localProgress * PI) * 0.30;
+          p += curlField(p + vec3(aSeed * 1.5), uTime + aSeed * 2.2) * turbulence;
+          vec4 mvPosition = modelViewMatrix * vec4(p, 1.0);
+          gl_Position = projectionMatrix * mvPosition;
+          gl_PointSize = clamp((1.5 + aSeed * 2.8) * uPixelRatio * (6.5 / max(1.0, -mvPosition.z)), 1.1, 5.4 * uPixelRatio);
+          float warm = 0.22 + 0.38 * (0.5 + 0.5 * sin(progress * 0.55 + aSeed * 7.0));
+          vColor = mix(vec3(0.15, 0.12, 0.09), vec3(0.48, 0.33, 0.18), warm);
+          vAlpha = 0.50 + aSeed * 0.38 + turbulence * 0.18;
+        }
+      `;
+      const fragmentShader = `
+        precision highp float;
+        varying float vAlpha;
+        varying vec3 vColor;
+        void main() {
+          float radius = length(gl_PointCoord - vec2(0.5));
+          float soft = 1.0 - smoothstep(0.08, 0.5, radius);
+          if (soft < 0.015) discard;
+          gl_FragColor = vec4(vColor, soft * vAlpha);
+          #include <colorspace_fragment>
+        }
+      `;
+      const material = new THREE.ShaderMaterial({
+        uniforms,
+        vertexShader,
+        fragmentShader,
+        transparent: true,
+        depthWrite: false,
+        blending: THREE.NormalBlending,
+      });
+      const points = new THREE.Points(geometry, material);
+      points.frustumCulled = false;
+      scene.add(points);
+
+      body.classList.add("motion-ready");
+      let currentCaption = -1;
+      function setCaption(index, immediate) {
+        if (index < 0 || index >= labels.length || index === currentCaption) return;
+        currentCaption = index;
+        kicker.textContent = `第${chapterNumber}章 · ${String(index + 1).padStart(2, "0")} / ${String(labels.length).padStart(2, "0")}`;
+        title.textContent = labels[index];
+        note.textContent = "粒子由本节小标题生成 · 正文与史料说明保持完整";
+        gsap.killTweensOf(caption);
+        if (immediate) {
+          gsap.set(caption, { autoAlpha: 1 });
+          return;
+        }
+        gsap.set(caption, { autoAlpha: 0 });
+        gsap.to(caption, { autoAlpha: 1, duration: 0.32, ease: "power2.out", overwrite: true });
+      }
+      setCaption(0, true);
+
+      let articleStart = 0;
+      let beatStarts = [];
+      function measureScrollAnchors() {
+        const currentScroll = window.scrollY || window.pageYOffset || 0;
+        articleStart = article.getBoundingClientRect().top + currentScroll;
+        beatStarts = beats.map((beat) => beat.getBoundingClientRect().top + currentScroll - window.innerHeight * 0.58);
+      }
+      function updateSceneFromScroll(scrollY) {
+        if (beatStarts.length !== beats.length) return;
+        const mapped = chapterProgressAtScroll(scrollY, articleStart, beatStarts, 0.28);
+        uniforms.uProgress.value = mapped.progress;
+        setCaption(mapped.captionIndex, false);
+        render();
+      }
+      function onScrollTriggerUpdate(self) {
+        updateSceneFromScroll(self.scroll());
+      }
+      function onScrollTriggerRefresh() {
+        measureScrollAnchors();
+        updateSceneFromScroll(window.scrollY || window.pageYOffset || 0);
+      }
+      ScrollTrigger.addEventListener("refresh", onScrollTriggerRefresh);
+      ScrollTrigger.create({
+        id: `chapter-${chapterNumber}-point-morph`,
+        trigger: article,
+        start: "top top",
+        end: "bottom bottom",
+        invalidateOnRefresh: true,
+        onUpdate: onScrollTriggerUpdate,
+      });
+
+      function resize() {
+        const width = Math.max(1, window.innerWidth);
+        const height = Math.max(1, window.innerHeight);
+        const ratio = Math.min(window.devicePixelRatio || 1, 1.35);
+        const articleRight = article.getBoundingClientRect().right;
+        const stageCenterPx = (articleRight + width) * 0.5;
+        renderer.setPixelRatio(ratio);
+        renderer.setSize(width, height, false);
+        camera.aspect = width / height;
+        camera.updateProjectionMatrix();
+        const viewWidth = 2 * camera.position.z * Math.tan(THREE.MathUtils.degToRad(camera.fov * 0.5)) * camera.aspect;
+        const worldPerPixel = viewWidth / width;
+        points.position.x = (stageCenterPx - width * 0.5) * worldPerPixel;
+        const stageWorldWidth = Math.max(1, width - articleRight) * worldPerPixel;
+        points.scale.x = Math.min(1, stageWorldWidth * 0.94 / 5.2);
+        uniforms.uPixelRatio.value = ratio;
+        measureScrollAnchors();
+        updateSceneFromScroll(window.scrollY || window.pageYOffset || 0);
+      }
+      function render() {
+        uniforms.uTime.value = performance.now() * 0.00022;
+        renderer.render(scene, camera);
+      }
+      function onContextLost(event) {
+        event.preventDefault();
+        media.revert();
+      }
+      canvas.addEventListener("webglcontextlost", onContextLost, false);
+      window.addEventListener("resize", resize, { passive: true });
+      resize();
+      ScrollTrigger.refresh();
+
+      return function () {
+        body.classList.remove("motion-ready");
+        canvas.removeEventListener("webglcontextlost", onContextLost, false);
+        window.removeEventListener("resize", resize);
+        ScrollTrigger.removeEventListener("refresh", onScrollTriggerRefresh);
+        geometry.dispose();
+        material.dispose();
+        renderer.dispose();
+      };
+    });
+  }
+
+  if (window.gsap && window.ScrollTrigger) start();
+  else if (document.readyState !== "complete") window.addEventListener("load", start, { once: true });
 })();
 </script></body></html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>鸿门宴</title>
+<title>鸿门宴</title><script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js" integrity="sha384-XmJ9SoHtVOHoQUcKvFAzVXwdkKo1Ie3bhmSoIAkcdsHGaIrVJIkmozyq0FJeb/Ly" crossorigin="anonymous"></script><script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js" integrity="sha384-wl5TeDVvOWt30Pbf8aSo2ZrzsOjddu3avOBvHe+p+OhJt9gP6w9YXmDkN5DK2/dF" crossorigin="anonymous"></script>
 <style>
 :root{--ink:#1c1a17;--dim:#6b655d;--line:#ddd6cc;--bg:#faf7f2;--gold:#a8874f}
 *{box-sizing:border-box}
@@ -43,9 +43,42 @@ ol.toc li.cur a .k{color:var(--ink)}
 .cover h1{font-size:2em;margin-bottom:.3em}
 .cover p{color:var(--dim);font-size:.92em}
 @media(max-width:640px){body{font-size:17px}main{padding:30px 18px 90px}}
-</style></head><body><main>
-<h1>鸿门宴</h1>
-<h2 class="sec">一、四十里</h2>
+
+body.chapter-story{--ink:#25221d;--dim:#6f675d;--line:#ddd3c3;--bg:#f8f3e8;--gold:#a8874f;background:var(--bg)}
+body.chapter-story main{max-width:none;margin:0;padding:0}
+body.chapter-story .ch1-visual{display:none}
+body.chapter-story .ch1-layout{max-width:46em;margin:0 auto;padding:30px 20px 96px}
+body.chapter-story .ch1-copy{min-width:0}
+body.chapter-story .mobile-scene{display:block;margin:1.35em 0 1.65em}
+body.chapter-story .mobile-scene img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+body.chapter-story .mobile-scene figcaption{font:12px/1.6 system-ui,-apple-system,sans-serif;color:var(--dim);margin-top:7px}
+body.chapter-story .story-beat{scroll-margin-top:18vh}
+body.chapter-story .ch1-scene-caption{display:none}
+@media(min-width:961px) and (prefers-reduced-motion:no-preference){
+ body.chapter-story.motion-ready main{position:relative;z-index:1;padding:22px clamp(28px,3.5vw,60px) 96px}
+ body.chapter-story.motion-ready .ch1-visual{display:block;position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none}
+ body.chapter-story.motion-ready #chapter-canvas{position:absolute;inset:0;width:100%;height:100%;display:block;opacity:.86}
+ body.chapter-story.motion-ready .ch1-wash{position:absolute;inset:0;background:linear-gradient(90deg,rgba(248,243,232,.04) 0%,rgba(248,243,232,.02) 54%,rgba(56,43,28,.09) 100%)}
+ body.chapter-story.motion-ready .ch1-layout{display:grid;grid-template-columns:minmax(430px,45vw) minmax(0,1fr);gap:clamp(34px,5vw,82px);max-width:1500px;margin:0 auto;padding:22px 0 100px}
+ body.chapter-story.motion-ready .ch1-copy{grid-column:1;max-width:680px;padding:28px clamp(26px,3vw,44px);background:rgba(250,247,240,.91);border:1px solid rgba(171,148,112,.28);box-shadow:0 15px 46px rgba(43,32,20,.07);backdrop-filter:blur(6px)}
+ body.chapter-story.motion-ready .ch1-copy h1{font-size:clamp(27px,2.1vw,34px);margin-bottom:1.1em}
+ body.chapter-story.motion-ready .ch1-copy h2.sec{margin-top:2em}
+ body.chapter-story.motion-ready .ch1-scene-caption{display:block;position:fixed;right:clamp(24px,6vw,108px);top:50%;transform:translateY(-50%);width:min(28vw,390px);z-index:2;pointer-events:none;color:#403426;opacity:0}
+ body.chapter-story.motion-ready .scene-kicker{display:block;font:11px/1.5 system-ui,-apple-system,sans-serif;letter-spacing:.16em;color:#75634d;margin-bottom:13px}
+ body.chapter-story.motion-ready .scene-title{display:block;font-size:clamp(23px,2.4vw,38px);font-weight:500;line-height:1.35;text-wrap:balance}
+ body.chapter-story.motion-ready .scene-note{display:block;margin-top:12px;font:12px/1.65 system-ui,-apple-system,sans-serif;color:#756b5d;max-width:28em}
+}
+@media(max-width:960px),(prefers-reduced-motion:reduce){
+ body.chapter-story .ch1-visual,body.chapter-story .ch1-scene-caption{display:none!important}
+ body.chapter-story .ch1-layout{display:block;max-width:43em;padding:30px 20px 88px}
+}
+@media(max-width:640px){
+ body.chapter-story main{font-size:17px}
+ body.chapter-story .ch1-layout{padding:26px 18px 80px}
+}
+</style></head><body class="chapter-story" data-chapter-number="7"><main>
+<div class="ch1-visual" aria-hidden="true"><canvas id="chapter-canvas"></canvas><div class="ch1-wash"></div></div><div id="scene-caption" class="ch1-scene-caption" aria-hidden="true"><span id="scene-kicker" class="scene-kicker">第7章 · 01 / 09</span><strong id="scene-title" class="scene-title">本节标题</strong><span id="scene-note" class="scene-note">粒子由本节小标题生成 · 正文与史料说明保持完整</span></div><div class="ch1-layout"><article class="ch1-copy"><h1>鸿门宴</h1>
+<section class="story-beat" data-beat="1"><h2 class="sec">一、四十里</h2><figure class="mobile-scene"><img src="assets/ch07/01-forty-li.webp" alt="传信人沿山路前往远方项羽军营，两营相隔四十里" loading="lazy"><figcaption>场景重构 · 四十里</figcaption></figure>
 <p>函谷关被攻破之后，项羽带着诸侯的军队进了关。</p>
 <p>《史记》说他到了戏，驻扎下来。从戏到鸿门，再到刘邦驻扎的霸上，相距四十里。<sup class="fn" data-n="1">①</sup></p>
 <p>四十里，在那个年代是半天的路。</p>
@@ -63,7 +96,7 @@ ol.toc li.cur a .k{color:var(--ink)}
 <p>范增还加了一句：吾令人望其气，皆为龙虎，成五采，此天子气也。急击勿失。</p>
 <p>我让人看过他那边的云气，形如龙虎，五彩斑斓，这是天子气。赶紧打，别错过。<sup class="fn" data-n="6">⑥</sup></p>
 <p>（这一段是范增说的，云气是当时人的说法，不是你今天要信的东西。）</p>
-<h2 class="sec">二、有人连夜跑出了营</h2>
+</section><section class="story-beat" data-beat="2"><h2 class="sec">二、有人连夜跑出了营</h2><figure class="mobile-scene"><img src="assets/ch07/02-night-arrival.webp" alt="项伯夜间抵达刘邦营门，人物以远景背影呈现" loading="lazy"><figcaption>场景重构 · 夜里来的那个人</figcaption></figure>
 <p>那天夜里，项羽的营里跑出去一个人。</p>
 <p>项伯，项羽的小叔。他骑马跑到刘邦的军营，要见张良。</p>
 <p>两个人有旧情——《史记》写得很清楚：秦的时候张良在下邳躲追捕，项伯杀了人，也在张良那儿躲过。<sup class="fn" data-n="7">⑦</sup></p>
@@ -81,7 +114,7 @@ ol.toc li.cur a .k{color:var(--ink)}
 <p>沉默了一会儿，刘邦说：固不如也。且为之奈何？</p>
 <p>确实不如人家。那怎么办呢？<sup class="fn" data-n="10">⑩</sup></p>
 <p><strong>这一句“固不如也”，是刘邦身上另一件值钱的东西。</strong>他不装。他没有说我十万打他四十万也未必输，没有说“我有天子气”。他承认打不过，然后问怎么办。</p>
-<h2 class="sec">三、一顿酒换一条命</h2>
+</section><section class="story-beat" data-beat="3"><h2 class="sec">三、一顿酒换一条命</h2><figure class="mobile-scene"><img src="assets/ch07/03-toast.webp" alt="刘邦与项伯在营帐低案前对坐敬酒" loading="lazy"><figcaption>场景重构 · 一杯酒换来的一句话</figcaption></figure>
 <p>张良的主意是去跟项伯说清楚。刘邦先问了一句细节：君安与项伯有故？</p>
 <p>你怎么会跟项伯有交情？</p>
 <p>听张良说完，刘邦接着问：孰与君少长？</p>
@@ -102,7 +135,7 @@ ol.toc li.cur a .k{color:var(--ink)}
 <p>项伯连夜回去，把刘邦的话全报告给项羽，然后加了一句：沛公不先破关中，公岂敢入乎？今人有大功而击之，不义也，不如因善遇之。</p>
 <p>沛公要是不先打下关中，您怎么敢进来？现在人家有大功你却要打他，不义。不如好好待他。</p>
 <p>项羽许诺。<sup class="fn" data-n="14">⑭</sup></p>
-<h2 class="sec">四、第二天的座次</h2>
+</section><section class="story-beat" data-beat="4"><h2 class="sec">四、第二天的座次</h2><figure class="mobile-scene"><img src="assets/ch07/04-arrival.webp" alt="一队骑兵在清晨远景中抵达鸿门营门" loading="lazy"><figcaption>场景重构 · 第二天的座次</figcaption></figure>
 <p>第二天一早，刘邦带着一百多骑兵来见项羽，到了鸿门。</p>
 <p>他说的第一句话是：臣与将军戮力而攻秦，将军战河北，臣战河南，然不自意能先入关破秦，得复见将军于此。今者有小人之言，令将军与臣有郤。</p>
 <p>我和将军合力攻秦，将军在河北打，我在河南打；我自己也没想到能先入关破秦，还能在这儿见到将军。现在有小人挑拨，让将军跟我有了嫌隙。<sup class="fn" data-n="15">⑮</sup></p>
@@ -112,7 +145,7 @@ ol.toc li.cur a .k{color:var(--ink)}
 <p>这是你手下的左司马曹无伤说的；不然我怎么会这样。</p>
 <p>他就这么把线人交出去了。<sup class="fn" data-n="16">⑯</sup></p>
 <p><strong>昨天夜里刘邦还什么都不知道，今天早上项羽就替他把内鬼查清了。</strong>刘邦后来回去做的第一件事，就是杀曹无伤——这是后话。</p>
-<h2 class="sec">五、那块玉佩</h2>
+</section><section class="story-beat" data-beat="5"><h2 class="sec">五、那块玉佩</h2><figure class="mobile-scene"><img src="assets/ch07/05-jue-signal.webp" alt="范增在宴席上举起有缺口的玉玦向项羽示意" loading="lazy"><figcaption>场景重构 · 那块玉佩</figcaption></figure>
 <p>项羽当天就留下刘邦一起喝酒。</p>
 <p>《史记》把座位写得清清楚楚：</p>
 <p>项王、项伯东向坐。亚父南向坐。亚父者，范增也。沛公北向坐，张良西向侍。<sup class="fn" data-n="17">⑰</sup></p>
@@ -137,7 +170,7 @@ ol.toc li.cur a .k{color:var(--ink)}
 <p>然后《史记》写了一句很动人的话：项伯亦拔剑起舞，常以身翼蔽沛公，庄不得击。</p>
 <p>项伯也拔剑起来跳，一直用身体遮着刘邦，项庄刺不到。<sup class="fn" data-n="22">㉒</sup></p>
 <p><strong>昨天夜里跟刘邦约定儿女亲家，今天就在酒席上用身体替他挡剑。</strong>项伯这个人，从头到尾都不觉得自己在背叛项羽——在他看来，他是在讲“义”。</p>
-<h2 class="sec">六、闯帐的那个人</h2>
+</section><section class="story-beat" data-beat="6"><h2 class="sec">六、闯帐的那个人</h2><figure class="mobile-scene"><img src="assets/ch07/06-shield-charge.webp" alt="樊哙持剑以盾撞开军门卫士" loading="lazy"><figcaption>场景重构 · 闯帐的那个人</figcaption></figure>
 <p>张良看到情况不对，起身到军门外找樊哙。</p>
 <p>樊哙问：今日之事何如？</p>
 <p>张良说：甚急。今者项庄拔剑舞，其意常在沛公也。</p>
@@ -170,7 +203,7 @@ ol.toc li.cur a .k{color:var(--ink)}
 <p>樊哙就跟张良坐下了。<sup class="fn" data-n="28">㉘</sup></p>
 <p>这一段值得单说一句。樊哙是个屠狗的，他这番话讲的全是项羽爱听的东西——功劳、约定、“我替你守着”。但最后他给了项羽一顶帽子：你在走秦朝的老路。</p>
 <p><strong>项羽答不上来，因为他心里知道自己这件事不占理。</strong>而能在人家的地盘上、当着四十万大军的主人的面，把这话说出口的，是一个卖过狗肉的粗人。</p>
-<h2 class="sec">七、那趟厕所</h2>
+</section><section class="story-beat" data-beat="7"><h2 class="sec">七、那趟厕所</h2><figure class="mobile-scene"><img src="assets/ch07/07-lishan-escape.webp" alt="一名骑者与四名步行随从沿骊山小路脱身" loading="lazy"><figcaption>场景重构 · 那趟厕所</figcaption></figure>
 <p>坐了一会儿，刘邦起身去上厕所，顺便招手把樊哙也叫了出去。</p>
 <p>刘邦出去以后，项羽派都尉陈平去请他回来——<strong>这个陈平，你以后还会见到他，那时候他在刘邦这边。</strong></p>
 <p>刘邦在帐外跟樊哙商量：今者出，未辞也，为之奈何？</p>
@@ -191,7 +224,7 @@ ol.toc li.cur a .k{color:var(--ink)}
 <p>临走前，刘邦交代张良一句话：从此道至吾军，不过二十里耳。度我至军中，公乃入。</p>
 <p>走这条路到我军营不过二十里。估摸着我已经到了营里，你再进去。<sup class="fn" data-n="31">㉛</sup></p>
 <p><strong>一个先入关、本该做关中王的人，在自己的营和盟友的营之间那二十里山路上，是跑着回去的。</strong></p>
-<h2 class="sec">八、玉斗</h2>
+</section><section class="story-beat" data-beat="8"><h2 class="sec">八、玉斗</h2><figure class="mobile-scene"><img src="assets/ch07/08-broken-jade-cup.webp" alt="范增以长剑击碎地席上的白玉斗" loading="lazy"><figcaption>场景重构 · 玉斗</figcaption></figure>
 <p>张良估着时间差不多了，进去谢罪。他说：</p>
 <p>沛公不胜桮杓，不能辞。谨使臣良奉白璧一双，再拜献大王足下；玉斗一双，再拜奉大将军足下。</p>
 <p>沛公酒量小，不能亲自告辞。让我奉上白璧一双献给大王，玉斗一双献给大将军（就是范增）。</p>
@@ -206,7 +239,7 @@ ol.toc li.cur a .k{color:var(--ink)}
 <p>唉！竖子不足与谋。夺项王天下者，必沛公也，吾属今为之虏矣。</p>
 <p>唉！这小子不值得跟他商量事。夺项王天下的，一定是沛公；我们这些人，将来都要做他的俘虏了。<sup class="fn" data-n="33">㉝</sup></p>
 <p>刘邦回到营里，做的第一件事是：立诛杀曹无伤。<sup class="fn" data-n="34">㉞</sup></p>
-<h2 class="sec">九、这顿饭决定了什么</h2>
+</section><section class="story-beat" data-beat="9"><h2 class="sec">九、这顿饭决定了什么</h2><figure class="mobile-scene"><img src="assets/ch07/09-empty-banquet.webp" alt="宴后空帐中的一对白璧、碎玉斗与岔开的山路" loading="lazy"><figcaption>场景重构 · 这顿饭决定了什么</figcaption></figure>
 <p>鸿门宴不是一个惊险故事的结尾，它是一个新的开始。</p>
 <p>先把这一天的账摆在桌面上：</p>
 <p><strong>秦朝刚亡，反秦的盟友们已经在抢秦朝留下的那个位置。</strong>这是当时最大的事实，也是后面所有冲突的根子。</p>
@@ -219,8 +252,8 @@ ol.toc li.cur a .k{color:var(--ink)}
 <p>几天以后，项羽进了咸阳。他在那儿做了一件跟刘邦完全相反的事。</p>
 <p>下一章：分封与汉中——为什么刘邦成了汉王。</p>
 <hr/>
-<hr/>
-<nav><a href="06.html">← 第六章</a><a class="dir" href="../index.html">目录</a><a href="08.html">下一章：分封与汉中 →</a></nav>
+<hr/></section><nav><a href="06.html">← 第六章</a><a class="dir" href="../index.html">目录</a><a href="08.html">下一章：分封与汉中 →</a></nav></article></div>
+
 </main><script>window.NOTES=["原文：“项羽遂入，至于戏西。沛公军霸上，未得与项羽相见。”四十里出自《史记》的“相去四十里”。", "原文：“沛公左司马曹无伤使人言於项羽曰：'沛公欲王关中，使子婴为相，珍宝尽有之。'”", "原文：“欲以求封。”", "原文：“项羽大怒，曰：'旦日飨士卒，为击破沛公军！'”", "原文：“当是时，项羽兵四十万，在新丰鸿门，沛公兵十万，在霸上。”“号百万”“号二十万”是《高祖本纪》里的写法。", "原文：“吾令人望其气，皆为龙虎，成五采，此天子气也。急击勿失。”这话是范增说的；云气是当时人的说法。", "原文：“秦时与臣游，项伯杀人，臣活之。”见《史记·留侯世家》。", "原文：“臣为韩王送沛公，沛公今事有急，亡去不义，不可不语。”", "原文：“鲰生说我曰'距关，毋内诸侯，秦地可尽王也'。故听之。”“鲰生”是浅陋的小子。", "原文：“良曰：'料大王士卒足以当项王乎？'沛公默然，曰：'固不如也，且为之柰何？'”", "原文：“沛公曰：'君为我呼入，吾得兄事之。'”", "原文：“沛公奉卮酒为寿，约为婚姻。”", "原文见《史记·项羽本纪》，此处照录。", "原文：“项伯许诺。谓沛公曰：'旦日不可不蚤自来谢项王。'……项伯复夜去，至军中，具以沛公言报项王，因言曰：'沛公不先破关中，公岂敢入乎？今人有大功而击之，不义也，不如因善遇之。'项王许诺。”", "原文见《史记·项羽本纪》。", "原文：“项王曰：'此沛公左司马曹无伤言之；不然，籍何以至此。'”", "原文：“项王即日因留沛公与饮。项王、项伯东向坐。亚父南乡坐。亚父者，范增也。沛公北乡坐，张良西乡侍。”", "军帐内的座次，通常解释为东向最尊、南向次之、北向再次、西向最卑。学者对这一段的解释不完全一致，但“张良是侍、刘邦居末”这一点没有争议。", "原文：“范增数目项王，举所佩玉玦以示之者三。”“数目”是屡次使眼色。", "原文：“项王默然不应。”", "原文：“范增起，出召项庄，谓曰：'君王为人不忍，若入前为寿，寿毕，请以剑舞，因击沛公於坐，杀之。不者，若属皆且为所虏。'”", "原文：“项庄拔剑起舞，项伯亦拔剑起舞，常以身翼蔽沛公，庄不得击。”", "原文：“於是张良至军门，见樊哙。樊哙曰：'今日之事何如？'良曰：'甚急。今者项庄拔剑舞，其意常在沛公也。'哙曰：'此迫矣，臣请入，与之同命。'”", "原文：“哙即带剑拥盾入军门。交戟之卫士欲止不内，樊哙侧其盾以撞，卫士仆地，哙遂入。”", "原文：“披帷西乡立，瞋目视项王，头发上指，目眦尽裂。”", "原文：“项王曰：'赐之彘肩。'则与一生彘肩。樊哙覆其盾於地，加彘肩上，拔剑切而啗之。”“生彘肩”就是生猪腿。", "原文见《史记·项羽本纪》，此处照录。", "原文：“项王未有以应，曰：'坐。'樊哙从良坐。”", "原文：“樊哙曰：'大行不顾细谨，大礼不辞小让。如今人方为刀俎，我为鱼肉，何辞为。'”", "原文：“沛公则置车骑，脱身独骑，与樊哙、夏侯婴、靳彊、纪信等四人持剑盾步走，从郦山下，道芷阳间行。”“间行”就是走小路。", "原文：“沛公谓张良曰：'从此道至吾军，不过二十里耳。度我至军中，公乃入。'”", "原文：“张良入谢，曰：'沛公不胜桮杓，不能辞……'项王曰：'沛公安在？'良曰：'闻大王有意督过之，脱身独去，已至军矣。'”“大将军”这里指范增。", "原文：“亚父受玉斗，置之地，拔剑撞而破之，曰：'唉！竖子不足与谋。夺项王天下者，必沛公也，吾属今为之虏矣。'”", "原文：“沛公至军，立诛杀曹无伤。”"];</script><script>
 (function(){
  var box=document.createElement('div'); box.id='nb';
@@ -235,5 +268,272 @@ ol.toc li.cur a .k{color:var(--ink)}
  });
  document.getElementById('nbx').addEventListener('click', function(){ box.classList.remove('on'); });
  document.addEventListener('keydown', function(e){ if(e.key==='Escape') box.classList.remove('on'); });
+})();
+</script><script type="module">import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.186.1/build/three.module.js";
+import { chapterProgressAtScroll } from "./assets/ch01/chapter_one_progress.mjs";
+import { particleTargetFromMask } from "./assets/chapter_story_targets.mjs";
+
+(function () {
+  const mediaQuery = "(min-width:961px) and (prefers-reduced-motion: no-preference)";
+  const chapterNumber = Number(document.body.dataset.chapterNumber) || 0;
+
+  function start() {
+    if (!window.gsap || !window.ScrollTrigger) return;
+    gsap.registerPlugin(ScrollTrigger);
+    const body = document.body;
+    const media = gsap.matchMedia();
+
+    media.add(mediaQuery, function () {
+      const canvas = document.getElementById("chapter-canvas");
+      const article = document.querySelector(".ch1-copy");
+      const beats = Array.from(document.querySelectorAll(".story-beat"));
+      const caption = document.getElementById("scene-caption");
+      const kicker = document.getElementById("scene-kicker");
+      const title = document.getElementById("scene-title");
+      const note = document.getElementById("scene-note");
+      if (!canvas || !article || beats.length === 0 || beats.length > 10) return;
+
+      const labels = beats.map((beat) => beat.querySelector("h2.sec")?.textContent.trim() || "本节");
+      let renderer;
+      try {
+        renderer = new THREE.WebGLRenderer({
+          canvas,
+          alpha: true,
+          antialias: true,
+          powerPreference: "low-power",
+        });
+      } catch (_error) {
+        return;
+      }
+
+      const pixelRatio = Math.min(window.devicePixelRatio || 1, 1.35);
+      const pointCount = window.innerWidth < 1200 ? 12000 : 16000;
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(38, 1, 0.1, 50);
+      camera.position.set(0, 0, 7.8);
+      camera.lookAt(0, 0, 0);
+      renderer.setPixelRatio(pixelRatio);
+      renderer.setSize(window.innerWidth, window.innerHeight, false);
+      renderer.setClearColor(0x000000, 0);
+      renderer.outputColorSpace = THREE.SRGBColorSpace;
+
+      function random(index, salt) {
+        const value = Math.sin((index + 1) * 12.9898 + (salt + 1) * 78.233) * 43758.5453;
+        return value - Math.floor(value);
+      }
+      function writePoint(target, index, x, y, z) {
+        const offset = index * 3;
+        target[offset] = x;
+        target[offset + 1] = y;
+        target[offset + 2] = z;
+      }
+      function makeInitialCloud(count) {
+        const positions = new Float32Array(count * 3);
+        for (let i = 0; i < count; i += 1) {
+          writePoint(positions, i, (random(i, 11) - 0.5) * 5.2, (random(i, 12) - 0.5) * 2.4, (random(i, 13) - 0.5) * 1.1);
+        }
+        return positions;
+      }
+      function makeTextTarget(label, count, salt) {
+        const mask = document.createElement("canvas");
+        mask.width = 920;
+        mask.height = 270;
+        const context = mask.getContext("2d", { willReadFrequently: true });
+        if (!context) throw new Error("Canvas 2D mask context is unavailable");
+        context.clearRect(0, 0, mask.width, mask.height);
+        context.fillStyle = "#fff";
+        context.textAlign = "center";
+        context.textBaseline = "middle";
+        let size = 92;
+        const fontStack = '"Songti SC", "Noto Serif CJK SC", "STSong", serif';
+        while (size > 44) {
+          context.font = `600 ${size}px ${fontStack}`;
+          if (context.measureText(label).width <= 840) break;
+          size -= 4;
+        }
+        context.font = `600 ${size}px ${fontStack}`;
+        context.fillText(label, mask.width * 0.5, mask.height * 0.5, 840);
+        const image = context.getImageData(0, 0, mask.width, mask.height);
+        return particleTargetFromMask(image.data, mask.width, mask.height, count, salt);
+      }
+
+      const initial = makeInitialCloud(pointCount);
+      const targets = labels.map((label, index) => makeTextTarget(label, pointCount, index + chapterNumber * 17));
+      const seeds = new Float32Array(pointCount);
+      for (let i = 0; i < pointCount; i += 1) seeds[i] = random(i, chapterNumber + 31);
+
+      const geometry = new THREE.BufferGeometry();
+      geometry.setAttribute("position", new THREE.BufferAttribute(initial, 3));
+      targets.forEach((target, index) => geometry.setAttribute(`aShape${index + 1}`, new THREE.BufferAttribute(target, 3)));
+      geometry.setAttribute("aSeed", new THREE.BufferAttribute(seeds, 1));
+      geometry.computeBoundingSphere();
+
+      const uniforms = {
+        uProgress: { value: 0 },
+        uTime: { value: 0 },
+        uPixelRatio: { value: pixelRatio },
+      };
+      const shapeAttributes = targets.map((_target, index) => `attribute vec3 aShape${index + 1};`).join("\n");
+      const shapeBranches = targets.map((_target, index) => `if (shapeIndex < ${index + 1}.5) return aShape${index + 1};`).join("\n          ");
+      const lastShape = targets.length;
+      const vertexShader = `
+        precision highp float;
+        ${shapeAttributes}
+        attribute float aSeed;
+        uniform float uProgress;
+        uniform float uTime;
+        uniform float uPixelRatio;
+        varying float vAlpha;
+        varying vec3 vColor;
+        const float PI = 3.14159265359;
+
+        vec3 curlField(vec3 p, float t) {
+          return vec3(
+            -1.2 * sin(p.x * 1.4 + t) * sin(p.y * 1.2 - t) - 1.5 * cos(p.z * 1.5 - t) * cos(p.x * 1.1 + t),
+            -1.3 * sin(p.y * 1.7 + t) * sin(p.z * 1.3 - t) - 1.4 * cos(p.x * 1.4 + t) * cos(p.y * 1.2 - t),
+            -1.1 * sin(p.z * 1.5 - t) * sin(p.x * 1.1 + t) - 1.7 * cos(p.y * 1.7 + t) * cos(p.z * 1.3 - t)
+          );
+        }
+        vec3 shapeAt(float shapeIndex) {
+          if (shapeIndex < 0.5) return position;
+          ${shapeBranches}
+          return aShape${lastShape};
+        }
+        void main() {
+          float progress = clamp(uProgress, 0.0, ${lastShape.toFixed(1)});
+          float segment = min(floor(progress), ${(lastShape - 1).toFixed(1)});
+          float localProgress = clamp(progress - segment, 0.0, 1.0);
+          vec3 fromShape = shapeAt(segment);
+          vec3 toShape = shapeAt(segment + 1.0);
+          vec3 p = mix(fromShape, toShape, smoothstep(0.0, 1.0, localProgress));
+          float turbulence = sin(localProgress * PI) * 0.30;
+          p += curlField(p + vec3(aSeed * 1.5), uTime + aSeed * 2.2) * turbulence;
+          vec4 mvPosition = modelViewMatrix * vec4(p, 1.0);
+          gl_Position = projectionMatrix * mvPosition;
+          gl_PointSize = clamp((1.5 + aSeed * 2.8) * uPixelRatio * (6.5 / max(1.0, -mvPosition.z)), 1.1, 5.4 * uPixelRatio);
+          float warm = 0.22 + 0.38 * (0.5 + 0.5 * sin(progress * 0.55 + aSeed * 7.0));
+          vColor = mix(vec3(0.15, 0.12, 0.09), vec3(0.48, 0.33, 0.18), warm);
+          vAlpha = 0.50 + aSeed * 0.38 + turbulence * 0.18;
+        }
+      `;
+      const fragmentShader = `
+        precision highp float;
+        varying float vAlpha;
+        varying vec3 vColor;
+        void main() {
+          float radius = length(gl_PointCoord - vec2(0.5));
+          float soft = 1.0 - smoothstep(0.08, 0.5, radius);
+          if (soft < 0.015) discard;
+          gl_FragColor = vec4(vColor, soft * vAlpha);
+          #include <colorspace_fragment>
+        }
+      `;
+      const material = new THREE.ShaderMaterial({
+        uniforms,
+        vertexShader,
+        fragmentShader,
+        transparent: true,
+        depthWrite: false,
+        blending: THREE.NormalBlending,
+      });
+      const points = new THREE.Points(geometry, material);
+      points.frustumCulled = false;
+      scene.add(points);
+
+      body.classList.add("motion-ready");
+      let currentCaption = -1;
+      function setCaption(index, immediate) {
+        if (index < 0 || index >= labels.length || index === currentCaption) return;
+        currentCaption = index;
+        kicker.textContent = `第${chapterNumber}章 · ${String(index + 1).padStart(2, "0")} / ${String(labels.length).padStart(2, "0")}`;
+        title.textContent = labels[index];
+        note.textContent = "粒子由本节小标题生成 · 正文与史料说明保持完整";
+        gsap.killTweensOf(caption);
+        if (immediate) {
+          gsap.set(caption, { autoAlpha: 1 });
+          return;
+        }
+        gsap.set(caption, { autoAlpha: 0 });
+        gsap.to(caption, { autoAlpha: 1, duration: 0.32, ease: "power2.out", overwrite: true });
+      }
+      setCaption(0, true);
+
+      let articleStart = 0;
+      let beatStarts = [];
+      function measureScrollAnchors() {
+        const currentScroll = window.scrollY || window.pageYOffset || 0;
+        articleStart = article.getBoundingClientRect().top + currentScroll;
+        beatStarts = beats.map((beat) => beat.getBoundingClientRect().top + currentScroll - window.innerHeight * 0.58);
+      }
+      function updateSceneFromScroll(scrollY) {
+        if (beatStarts.length !== beats.length) return;
+        const mapped = chapterProgressAtScroll(scrollY, articleStart, beatStarts, 0.28);
+        uniforms.uProgress.value = mapped.progress;
+        setCaption(mapped.captionIndex, false);
+        render();
+      }
+      function onScrollTriggerUpdate(self) {
+        updateSceneFromScroll(self.scroll());
+      }
+      function onScrollTriggerRefresh() {
+        measureScrollAnchors();
+        updateSceneFromScroll(window.scrollY || window.pageYOffset || 0);
+      }
+      ScrollTrigger.addEventListener("refresh", onScrollTriggerRefresh);
+      ScrollTrigger.create({
+        id: `chapter-${chapterNumber}-point-morph`,
+        trigger: article,
+        start: "top top",
+        end: "bottom bottom",
+        invalidateOnRefresh: true,
+        onUpdate: onScrollTriggerUpdate,
+      });
+
+      function resize() {
+        const width = Math.max(1, window.innerWidth);
+        const height = Math.max(1, window.innerHeight);
+        const ratio = Math.min(window.devicePixelRatio || 1, 1.35);
+        const articleRight = article.getBoundingClientRect().right;
+        const stageCenterPx = (articleRight + width) * 0.5;
+        renderer.setPixelRatio(ratio);
+        renderer.setSize(width, height, false);
+        camera.aspect = width / height;
+        camera.updateProjectionMatrix();
+        const viewWidth = 2 * camera.position.z * Math.tan(THREE.MathUtils.degToRad(camera.fov * 0.5)) * camera.aspect;
+        const worldPerPixel = viewWidth / width;
+        points.position.x = (stageCenterPx - width * 0.5) * worldPerPixel;
+        const stageWorldWidth = Math.max(1, width - articleRight) * worldPerPixel;
+        points.scale.x = Math.min(1, stageWorldWidth * 0.94 / 5.2);
+        uniforms.uPixelRatio.value = ratio;
+        measureScrollAnchors();
+        updateSceneFromScroll(window.scrollY || window.pageYOffset || 0);
+      }
+      function render() {
+        uniforms.uTime.value = performance.now() * 0.00022;
+        renderer.render(scene, camera);
+      }
+      function onContextLost(event) {
+        event.preventDefault();
+        media.revert();
+      }
+      canvas.addEventListener("webglcontextlost", onContextLost, false);
+      window.addEventListener("resize", resize, { passive: true });
+      resize();
+      ScrollTrigger.refresh();
+
+      return function () {
+        body.classList.remove("motion-ready");
+        canvas.removeEventListener("webglcontextlost", onContextLost, false);
+        window.removeEventListener("resize", resize);
+        ScrollTrigger.removeEventListener("refresh", onScrollTriggerRefresh);
+        geometry.dispose();
+        material.dispose();
+        renderer.dispose();
+      };
+    });
+  }
+
+  if (window.gsap && window.ScrollTrigger) start();
+  else if (document.readyState !== "complete") window.addEventListener("load", start, { once: true });
 })();
 </script></body></html>

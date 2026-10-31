@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>骊山路上：那批人一个接一个地不见了</title>
+<title>骊山路上：那批人一个接一个地不见了</title><script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js" integrity="sha384-XmJ9SoHtVOHoQUcKvFAzVXwdkKo1Ie3bhmSoIAkcdsHGaIrVJIkmozyq0FJeb/Ly" crossorigin="anonymous"></script><script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js" integrity="sha384-wl5TeDVvOWt30Pbf8aSo2ZrzsOjddu3avOBvHe+p+OhJt9gP6w9YXmDkN5DK2/dF" crossorigin="anonymous"></script>
 <style>
 :root{--ink:#1c1a17;--dim:#6b655d;--line:#ddd6cc;--bg:#faf7f2;--gold:#a8874f}
 *{box-sizing:border-box}
@@ -43,15 +43,50 @@ ol.toc li.cur a .k{color:var(--ink)}
 .cover h1{font-size:2em;margin-bottom:.3em}
 .cover p{color:var(--dim);font-size:.92em}
 @media(max-width:640px){body{font-size:17px}main{padding:30px 18px 90px}}
-</style></head><body><main>
-<h1>骊山路上：那批人一个接一个地不见了</h1>
-<h2 class="sec">一、先看一份档案</h2>
+
+body.chapter-one{--ink:#25221d;--dim:#6f675d;--line:#ddd3c3;--bg:#f8f3e8;--gold:#a8874f;background:var(--bg)}
+body.chapter-one main{max-width:none;margin:0;padding:0}
+body.chapter-one .ch1-visual{display:none}
+body.chapter-one .ch1-layout{max-width:46em;margin:0 auto;padding:30px 20px 96px}
+body.chapter-one .ch1-copy{min-width:0}
+body.chapter-one .mobile-scene{display:block;margin:1.35em 0 1.65em}
+body.chapter-one .mobile-scene img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+body.chapter-one .mobile-scene figcaption{font:12px/1.6 system-ui,-apple-system,sans-serif;color:var(--dim);margin-top:7px}
+body.chapter-one .story-beat{scroll-margin-top:18vh}
+body.chapter-one .ch1-scene-caption{display:none}
+@media(min-width:961px) and (prefers-reduced-motion:no-preference){
+ body.chapter-one.motion-ready main{position:relative;z-index:1;padding:22px clamp(28px,3.5vw,60px) 96px}
+ body.chapter-one.motion-ready .ch1-visual{display:block;position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none}
+ body.chapter-one.motion-ready #chapter-canvas{position:absolute;inset:0;width:100%;height:100%;display:block;opacity:.86}
+ body.chapter-one.motion-ready .ch1-wash{position:absolute;inset:0;background:linear-gradient(90deg,rgba(248,243,232,.04) 0%,rgba(248,243,232,.02) 54%,rgba(56,43,28,.09) 100%)}
+ body.chapter-one.motion-ready .ch1-layout{display:grid;grid-template-columns:minmax(430px,45vw) minmax(0,1fr);gap:clamp(34px,5vw,82px);max-width:1500px;margin:0 auto;padding:22px 0 100px}
+ body.chapter-one.motion-ready .ch1-copy{grid-column:1;max-width:680px;padding:28px clamp(26px,3vw,44px);background:rgba(250,247,240,.91);border:1px solid rgba(171,148,112,.28);box-shadow:0 15px 46px rgba(43,32,20,.07);backdrop-filter:blur(6px)}
+ body.chapter-one.motion-ready .ch1-copy h1{font-size:clamp(27px,2.1vw,34px);margin-bottom:1.1em}
+ body.chapter-one.motion-ready .ch1-copy h2.sec{margin-top:2em}
+ body.chapter-one.motion-ready .ch1-scene-caption{display:block;position:fixed;right:clamp(24px,6vw,108px);top:50%;transform:translateY(-50%);width:min(28vw,390px);z-index:2;pointer-events:none;color:#403426;opacity:0}
+ body.chapter-one.motion-ready .scene-kicker{display:block;font:11px/1.5 system-ui,-apple-system,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#75634d;margin-bottom:13px}
+ body.chapter-one.motion-ready .scene-title{display:block;font-size:clamp(23px,2.4vw,38px);font-weight:500;line-height:1.35;text-wrap:balance}
+ body.chapter-one.motion-ready .scene-note{display:block;margin-top:12px;font:12px/1.65 system-ui,-apple-system,sans-serif;color:#756b5d;max-width:28em}
+}
+@media(max-width:960px),(prefers-reduced-motion:reduce){
+ body.chapter-one .ch1-visual,body.chapter-one .ch1-scene-caption{display:none!important}
+ body.chapter-one .ch1-layout{display:block;max-width:43em;padding:30px 20px 88px}
+ body.chapter-one .mobile-scene{display:block!important}
+}
+@media(max-width:640px){
+ body.chapter-one main{font-size:17px}
+ body.chapter-one .ch1-layout{padding:26px 18px 80px}
+ body.chapter-one .mobile-scene{margin:1em 0 1.4em}
+}
+</style></head><body class="chapter-one"><main>
+<div class="ch1-visual" aria-hidden="true"><canvas id="chapter-canvas"></canvas><div class="ch1-wash"></div></div><div id="scene-caption" class="ch1-scene-caption" aria-hidden="true"><span id="scene-kicker" class="scene-kicker">第一章 · 01 / 06</span><strong id="scene-title" class="scene-title">从一份档案开始</strong><span id="scene-note" class="scene-note">画面是叙事意象，正文与史料边界仍以文字为准</span></div><div class="ch1-layout"><article class="ch1-copy"><h1>骊山路上：那批人一个接一个地不见了</h1>
+<section class="story-beat" data-beat="1"><h2 class="sec">一、先看一份档案</h2><figure class="mobile-scene"><img src="assets/ch01/archive.webp" alt="案头上的档册、竹简与封泥印章" loading="lazy"><figcaption>场景重构 · 先看一份档案</figcaption></figure>
 <p>我们从一份档案开始。</p>
 <table><tr><td>姓名</td><td>刘邦（原名刘季）</td></tr><tr><td>性别</td><td>男</td></tr><tr><td>籍贯</td><td>沛县丰邑中阳里</td></tr><tr><td>学历</td><td>无。没进过学，没考过试</td></tr><tr><td>职业</td><td>泗水亭长</td></tr><tr><td>家庭出身</td><td>农民</td></tr><tr><td>生卒</td><td>前256—前195</td></tr><tr><td>长相</td><td>高鼻梁，额头隆起，漂亮的胡子，左边大腿上有七十二颗黑痣 <sup class="fn" data-n="1">①</sup></td></tr><tr><td>爱好</td><td>酒，女人</td></tr><tr><td>常去的地方</td><td>王媪、武负两家酒铺——都是赊账</td></tr><tr><td>同事对他的评语</td><td>刘季固多大言，少成事</td></tr></table>
 <p>最后那条评语，出自县里的主吏萧何。意思是：刘邦这人爱说大话，成不了什么事。<sup class="fn" data-n="2">②</sup></p>
 <p>按说，这样一份档案没什么好看的。亭长管什么？管一小片地面的治安、行旅、抓盗贼，搁今天大概相当于一个乡镇派出所所长，还是没编制的。这个人四十多岁了，还在赊酒喝，被同事当众说成不了事。</p>
 <p>那时候谁也看不出他有什么前途。包括他自己。</p>
-<h2 class="sec">二、一个敢在满堂宾客面前吹牛的亭长</h2>
+</section><section class="story-beat" data-beat="2"><h2 class="sec">二、一个敢在满堂宾客面前吹牛的亭长</h2><figure class="mobile-scene"><img src="assets/ch01/banquet.webp" alt="沛县宴席中的宾客剪影与空白名帖" loading="lazy"><figcaption>场景重构 · 吕公宴客</figcaption></figure>
 <p>转折从一场饭局开始。</p>
 <p>单父人吕公跟沛县县令交情好，为了避仇，搬到沛县来住。县里的豪杰和官吏听说县令来了贵客，都去道贺。</p>
 <p>负责收贺礼的是萧何。他当着客人立下规矩：贺礼不到一千钱的，坐堂下。</p>
@@ -72,7 +107,7 @@ ol.toc li.cur a .k{color:var(--ink)}
 <p>说到这里，得停一下，把萧何那句话记牢——“刘季固多大言，少成事”。</p>
 <p>因为将来替刘邦管钱粮、守后方的，正是这个当众说他成不了事的萧何。那时候他们还不是君臣，一个收礼记账，一个吹牛混席，互相都看不上。</p>
 <p>历史后来把这句话打了个漂亮的翻身仗。</p>
-<h2 class="sec">三、他见过的最大的场面</h2>
+</section><section class="story-beat" data-beat="3"><h2 class="sec">三、他见过的最大的场面</h2><figure class="mobile-scene"><img src="assets/ch01/procession.webp" alt="远处的秦代出巡仪仗与前景观者" loading="lazy"><figcaption>场景重构 · 他见过的最大场面</figcaption></figure>
 <p>当亭长有个差事：去咸阳服徭役。</p>
 <p>咸阳是秦朝的首都。他在那里站过一次人群，看见了秦始皇出行的排场。</p>
 <p>然后他叹了一声：嗟乎，大丈夫当如此也！</p>
@@ -85,7 +120,7 @@ ol.toc li.cur a .k{color:var(--ink)}
 <p>项梁吓得一把捂住他的嘴：别胡说，要灭族的！</p>
 <p>一个说“大丈夫当如此也”，一个说“彼可取而代也”。两个人都想当皇帝，语气不一样：刘邦在羡慕，项羽在宣告。<sup class="fn" data-n="6">⑥</sup></p>
 <p>多年以后，喊出这两句话的人会在同一个战场上碰面。他们会先结拜，再翻脸；会一起打进关中，再互相追杀；会在一条叫鸿沟的河边平分天下；最后会在垓下，一个人听着四面楚歌。那是后面的事了。</p>
-<h2 class="sec">四、骊山路上</h2>
+</section><section class="story-beat" data-beat="4"><h2 class="sec">四、骊山路上</h2><figure class="mobile-scene"><img src="assets/ch01/road.webp" alt="山路上的押送队伍，路线仅作叙事示意" loading="lazy"><figcaption>场景重构 · 骊山路上</figcaption></figure>
 <p>现在说这一章的正题。</p>
 <p>县里交给刘邦一桩差事：押送一批人去骊山。</p>
 <p>骊山在关中，是秦朝长年征发人力干活的地方——秦始皇的陵就在那儿修。这活儿不好干：路远，人不愿意去，而且一旦路上人跑了，你交不出数。</p>
@@ -106,7 +141,7 @@ ol.toc li.cur a .k{color:var(--ink)}
 <p>这是个什么概念？不够打一场架，够一起逃命。所以别急着把他当义军首领——这时候他连逃犯都还没当利索。<sup class="fn" data-n="8">⑧</sup></p>
 <p>那天晚上他喝多了。喝多了就容易出事。</p>
 <p>他遇到了一条蛇。</p>
-<h2 class="sec">五、那晚的蛇</h2>
+</section><section class="story-beat" data-beat="5"><h2 class="sec">五、那晚的蛇</h2><figure class="mobile-scene"><img src="assets/ch01/snake.webp" alt="以蛇影与朱砂切痕呈现的斩蛇传说意象" loading="lazy"><figcaption>场景重构 · 那晚的蛇</figcaption></figure>
 <p>走在前面探路的人折回来了，说前面有条大蛇挡着道，建议绕路。</p>
 <p>刘邦已经醉了，说：壮士行，何畏！——壮士走路，怕什么。</p>
 <p>他上前，拔剑，把蛇斩成两段，路就开了。</p>
@@ -120,7 +155,7 @@ ol.toc li.cur a .k{color:var(--ink)}
 <p>他高兴的不是那条蛇，是有人开始这么看他。</p>
 <p>一个人被身边人当成有天命，他自己信不信其实不重要；重要的是他知道了这件事可以拿来用。</p>
 <p>那晚之后，他带着这十几个人躲进了芒砀山。</p>
-<h2 class="sec">六、山上那个人</h2>
+</section><section class="story-beat" data-beat="6"><h2 class="sec">六、山上那个人</h2><figure class="mobile-scene"><img src="assets/ch01/mountain.webp" alt="芒砀山泽远景与聚拢的人影，云气为史书记载说法" loading="lazy"><figcaption>场景重构 · 山上那个人</figcaption></figure>
 <p>秦始皇说过一句话：东南有天子气。</p>
 <p>于是他往东边巡游，想用天子的仪仗把那股气镇住。<sup class="fn" data-n="10">⑩</sup></p>
 <p>刘邦听说了，心里犯疑——他怀疑那股气说的是自己，就躲进了芒、砀一带的山泽岩石之间。</p>
@@ -133,8 +168,8 @@ ol.toc li.cur a .k{color:var(--ink)}
 <p>而山上那个人，已经等了很久。</p>
 <p>下一章：大泽乡——九百人，误了期。</p>
 <hr/>
-<hr/>
-<nav><a href="people.html">← 人物表</a><a class="dir" href="../index.html">目录</a><a href="02.html">下一章：大泽乡 →</a></nav>
+<hr/></section><nav><a href="people.html">← 人物表</a><a class="dir" href="../index.html">目录</a><a href="02.html">下一章：大泽乡 →</a></nav></article></div>
+
 </main><script>window.NOTES=["见《史记·高祖本纪》《汉书·高帝纪上》。七十二颗黑痣是史书写进去的，不是我编的。顺便说一句：谁数的，史书没交代。", "《史记》《汉书》都记了这句。", "原文：“乃绐为谒曰'贺钱万'，实不持一钱。”", "吕后生了孝惠帝和鲁元公主。", "这句是我按处境推的：史料只写他在咸阳“纵观”，没写当时有谁在场。", "见《史记·项羽本纪》。原文：“籍曰：'彼可取而代也。'梁掩其口，曰：'毋妄言，族矣！'”", "秦朝对押送失职怎么处置，没有明确条文，所以这里只写他自己的判断。“失期当斩”那句话出自陈胜、吴广的处境，不是刘邦这一桩。", "“十余人”是史书原文。", "斩蛇这段《史记》《汉书》都收，文字基本一致。", "原文：“於是因东游以厌之”。", "云气这段出自《史记·高祖本纪》《汉书·高帝纪上》。顺带一提：吕后后来是汉朝的开国皇后，这条记载出现在她丈夫的本纪里，你读的时候可以自己掂量一下。"];</script><script>
 (function(){
  var box=document.createElement('div'); box.id='nb';
@@ -149,5 +184,353 @@ ol.toc li.cur a .k{color:var(--ink)}
  });
  document.getElementById('nbx').addEventListener('click', function(){ box.classList.remove('on'); });
  document.addEventListener('keydown', function(e){ if(e.key==='Escape') box.classList.remove('on'); });
+})();
+</script><script type="module">import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.186.1/build/three.module.js";
+import { chapterProgressAtScroll } from "./assets/ch01/chapter_one_progress.mjs";
+
+(function () {
+  const mediaQuery = "(min-width:961px) and (prefers-reduced-motion: no-preference)";
+  const beatCopy = [
+    ["第一章 · 01 / 06", "一个没什么前途的亭长", "从档案里看见刘邦最初的样子"],
+    ["第一章 · 02 / 06", "一场没带钱的宴席", "一张名帖，写着贺钱万"],
+    ["第一章 · 03 / 06", "他说：大丈夫当如此也", "一次服役途中，远望秦始皇出巡"],
+    ["第一章 · 04 / 06", "骊山路上，队伍渐渐变少", "路线是叙事意象，不是精确地图"],
+    ["第一章 · 05 / 06", "蛇影之后，传说开始长出来", "史书保存的传说，不是可核实现场"],
+    ["第一章 · 06 / 06", "山上那个人，正在等", "山泽与云气按史书记载说法呈现"],
+  ];
+
+  function start() {
+    if (!window.gsap || !window.ScrollTrigger) return;
+    gsap.registerPlugin(ScrollTrigger);
+    const body = document.body;
+    const media = gsap.matchMedia();
+    window.__chapterOneMedia = media;
+
+    media.add(mediaQuery, function () {
+      const canvas = document.getElementById("chapter-canvas");
+      const article = document.querySelector(".ch1-copy");
+      const beats = Array.from(document.querySelectorAll(".story-beat"));
+      const caption = document.getElementById("scene-caption");
+      const kicker = document.getElementById("scene-kicker");
+      const title = document.getElementById("scene-title");
+      const note = document.getElementById("scene-note");
+      if (!canvas || !article || beats.length !== 6) return;
+
+      let renderer;
+      try {
+        renderer = new THREE.WebGLRenderer({
+          canvas,
+          alpha: true,
+          antialias: true,
+          powerPreference: "low-power",
+        });
+      } catch (_error) {
+        return;
+      }
+
+      const pixelRatio = Math.min(window.devicePixelRatio || 1, 1.35);
+      const pointCount = window.innerWidth < 1200 ? 12000 : 16000;
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(38, 1, 0.1, 50);
+      camera.position.set(0, 0, 7.8);
+      camera.lookAt(0, 0, 0);
+      renderer.setPixelRatio(pixelRatio);
+      renderer.setClearColor(0x000000, 0);
+      renderer.setSize(window.innerWidth, window.innerHeight, false);
+      renderer.outputColorSpace = THREE.SRGBColorSpace;
+
+      function rand(index, salt) {
+        const value = Math.sin(index * 12.9898 + salt * 78.233) * 43758.5453;
+        return value - Math.floor(value);
+      }
+      function mountainProfile(x) {
+        const mainPeak = 1.28 - Math.abs(x - 0.15) * 0.88;
+        const westPeak = 0.72 - Math.abs(x + 1.55) * 0.74;
+        const eastPeak = 0.58 - Math.abs(x - 2.0) * 0.66;
+        return Math.max(mainPeak, westPeak, eastPeak);
+      }
+      function writePoint(target, index, x, y, z) {
+        const offset = index * 3;
+        target[offset] = x;
+        target[offset + 1] = y;
+        target[offset + 2] = z;
+      }
+      function makeShapeTargets(count) {
+        const targets = Array.from({ length: 7 }, () => new Float32Array(count * 3));
+        const seeds = new Float32Array(count);
+        const tau = Math.PI * 2;
+        for (let i = 0; i < count; i += 1) {
+          const a = rand(i, 1);
+          const b = rand(i, 2);
+          const c = rand(i, 3);
+          const d = rand(i, 4);
+          seeds[i] = rand(i, 5);
+
+          // Initial ink dust cloud.
+          writePoint(targets[0], i, (a - 0.5) * 5.3, (b - 0.5) * 3.6, (c - 0.5) * 1.7);
+
+          // Six sequential point-cloud targets: archive, vessel, procession, road, serpent, mountain.
+          const strip = Math.floor(a * 9);
+          const slipT = b;
+          writePoint(targets[1], i,
+            (strip - 4) * 0.22 + 0.045 * Math.sin(slipT * tau),
+            (slipT - 0.5) * 2.65,
+            0.10 * Math.sin(slipT * 8 + strip * 0.7) + (c - 0.5) * 0.06);
+
+          const vesselT = a;
+          const vesselAngle = b * tau;
+          let vesselRadius;
+          if (vesselT < 0.14) vesselRadius = 0.20 + vesselT * 0.8;
+          else if (vesselT < 0.76) vesselRadius = 0.31 + 0.54 * Math.sin(((vesselT - 0.14) / 0.62) * Math.PI * 0.52);
+          else vesselRadius = 0.82 - ((vesselT - 0.76) / 0.24) * 0.48;
+          writePoint(targets[2], i,
+            Math.cos(vesselAngle) * vesselRadius,
+            (vesselT - 0.5) * 2.5,
+            Math.sin(vesselAngle) * vesselRadius);
+
+          const processionMode = Math.floor(a * 3);
+          if (processionMode === 0) {
+            const t = b;
+            writePoint(targets[3], i,
+              (t - 0.5) * 4.8,
+              -0.08 + 0.14 * Math.sin(t * tau * 2) + (c - 0.5) * 0.13,
+              (d - 0.5) * 0.18);
+          } else if (processionMode === 1) {
+            const centerX = b < 0.5 ? -1.25 : 1.25;
+            const angle = c * tau;
+            const radius = 0.34 + (d - 0.5) * 0.06;
+            writePoint(targets[3], i,
+              centerX + Math.cos(angle) * radius,
+              -0.50 + Math.sin(angle) * radius,
+              (d - 0.5) * 0.16);
+          } else {
+            const flag = Math.floor(b * 5);
+            writePoint(targets[3], i,
+              (flag - 2) * 0.76 + (c - 0.5) * 0.10,
+              -0.06 + d * 1.30,
+              (c - 0.5) * 0.12);
+          }
+
+          const roadT = a;
+          const roadWidth = 0.40;
+          const roadSide = (b - 0.5) * roadWidth;
+          writePoint(targets[4], i,
+            (roadT - 0.5) * 5.1,
+            0.63 * Math.sin(roadT * tau * 1.15) + 0.18 * Math.sin(roadT * tau * 3.2) + roadSide,
+            0.22 * Math.cos(roadT * tau * 1.15) + (c - 0.5) * 0.10);
+
+          const snakeT = a;
+          writePoint(targets[5], i,
+            (snakeT - 0.5) * 4.7,
+            0.72 * Math.sin(snakeT * tau * 1.55) + 0.16 * Math.sin(snakeT * tau * 4.6) + (b - 0.5) * 0.12,
+            0.24 * Math.cos(snakeT * tau * 1.55) + (c - 0.5) * 0.16);
+
+          const mountainLayer = Math.floor(a * 3);
+          const mountainX = (b - 0.5) * 5.3;
+          const mountainBase = -1.42 - mountainLayer * 0.10;
+          const mountainTop = mountainProfile(mountainX) - mountainLayer * 0.32;
+          const mountainFill = 0.22 + 0.78 * rand(i, 6);
+          const mountainY = mountainBase + Math.max(0, mountainTop - mountainBase) * mountainFill;
+          writePoint(targets[6], i, mountainX, mountainY, -mountainLayer * 0.28 + (c - 0.5) * 0.08);
+        }
+        return { targets, seeds };
+      }
+
+      const { targets, seeds } = makeShapeTargets(pointCount);
+      const geometry = new THREE.BufferGeometry();
+      // position is the initialPosition point set; the six custom attributes are the successive targets.
+      geometry.setAttribute("position", new THREE.BufferAttribute(targets[0], 3));
+      for (let shape = 1; shape < targets.length; shape += 1) {
+        geometry.setAttribute(`aShape${shape}`, new THREE.BufferAttribute(targets[shape], 3));
+      }
+      geometry.setAttribute("aSeed", new THREE.BufferAttribute(seeds, 1));
+      geometry.computeBoundingSphere();
+
+      const uniforms = {
+        uProgress: { value: 0 },
+        uTime: { value: 0 },
+        uPixelRatio: { value: pixelRatio },
+      };
+      const vertexShader = `
+        precision highp float;
+        attribute vec3 aShape1;
+        attribute vec3 aShape2;
+        attribute vec3 aShape3;
+        attribute vec3 aShape4;
+        attribute vec3 aShape5;
+        attribute vec3 aShape6;
+        attribute float aSeed;
+        uniform float uProgress;
+        uniform float uTime;
+        uniform float uPixelRatio;
+        varying float vAlpha;
+        varying vec3 vColor;
+        const float PI = 3.14159265359;
+
+        vec3 curlField(vec3 p, float t) {
+          float x = p.x * 1.15;
+          float y = p.y * 1.15;
+          float z = p.z * 1.15;
+          return vec3(
+            -1.2 * sin(x * 1.4 + t) * sin(y * 1.2 - t) - 1.5 * cos(z * 1.5 - t) * cos(x * 1.1 + t),
+            -1.3 * sin(y * 1.7 + t) * sin(z * 1.3 - t) - 1.4 * cos(x * 1.4 + t) * cos(y * 1.2 - t),
+            -1.1 * sin(z * 1.5 - t) * sin(x * 1.1 + t) - 1.7 * cos(y * 1.7 + t) * cos(z * 1.3 - t)
+          );
+        }
+
+        vec3 morphPoint(float p) {
+          if (p < 1.0) return mix(position, aShape1, smoothstep(0.0, 1.0, p));
+          if (p < 2.0) return mix(aShape1, aShape2, smoothstep(1.0, 2.0, p));
+          if (p < 3.0) return mix(aShape2, aShape3, smoothstep(2.0, 3.0, p));
+          if (p < 4.0) return mix(aShape3, aShape4, smoothstep(3.0, 4.0, p));
+          if (p < 5.0) return mix(aShape4, aShape5, smoothstep(4.0, 5.0, p));
+          if (p < 6.0) return mix(aShape5, aShape6, smoothstep(5.0, 6.0, p));
+          return aShape6;
+        }
+
+        void main() {
+          float progress = clamp(uProgress, 0.0, 6.0);
+          float segment = min(floor(progress), 5.0);
+          float localProgress = progress - segment;
+          float turbulence = sin(localProgress * PI) * 0.34;
+          vec3 p = morphPoint(progress);
+          p += curlField(p + vec3(aSeed * 1.7), uTime + aSeed * 2.2) * turbulence;
+          p.z += sin(uTime * 0.7 + aSeed * 18.0) * 0.035;
+          vec4 mvPosition = modelViewMatrix * vec4(p, 1.0);
+          gl_Position = projectionMatrix * mvPosition;
+          gl_PointSize = clamp((1.55 + aSeed * 3.0) * uPixelRatio * (6.5 / max(1.0, -mvPosition.z)), 1.2, 5.8 * uPixelRatio);
+          float warm = 0.24 + 0.40 * (0.5 + 0.5 * sin(progress * 0.72 + aSeed * 7.0));
+          vColor = mix(vec3(0.15, 0.12, 0.09), vec3(0.48, 0.33, 0.18), warm);
+          vAlpha = 0.54 + aSeed * 0.36 + turbulence * 0.20;
+        }
+      `;
+      const fragmentShader = `
+        precision highp float;
+        varying float vAlpha;
+        varying vec3 vColor;
+        void main() {
+          float radius = length(gl_PointCoord - vec2(0.5));
+          float soft = 1.0 - smoothstep(0.08, 0.5, radius);
+          if (soft < 0.015) discard;
+          gl_FragColor = vec4(vColor, soft * vAlpha);
+          #include <colorspace_fragment>
+        }
+      `;
+      const material = new THREE.ShaderMaterial({
+        uniforms,
+        vertexShader,
+        fragmentShader,
+        transparent: true,
+        depthWrite: false,
+        blending: THREE.NormalBlending,
+      });
+      const points = new THREE.Points(geometry, material);
+      points.frustumCulled = false;
+      scene.add(points);
+
+      body.classList.add("motion-ready");
+      let currentCaption = -1;
+      function setCaption(index, immediate) {
+        if (index < 0 || index >= beatCopy.length || index === currentCaption) return;
+        currentCaption = index;
+        kicker.textContent = beatCopy[index][0];
+        title.textContent = beatCopy[index][1];
+        note.textContent = beatCopy[index][2];
+        gsap.killTweensOf(caption);
+        if (immediate) {
+          gsap.set(caption, { autoAlpha: 1 });
+          return;
+        }
+        gsap.set(caption, { autoAlpha: 0 });
+        gsap.to(caption, { autoAlpha: 1, duration: 0.32, ease: "power2.out", overwrite: true });
+      }
+      setCaption(0, true);
+
+      let articleStart = 0;
+      let beatStarts = [];
+      function measureScrollAnchors() {
+        const currentScroll = window.scrollY || window.pageYOffset || 0;
+        articleStart = article.getBoundingClientRect().top + currentScroll;
+        beatStarts = beats.map(function (beat) {
+          return beat.getBoundingClientRect().top + currentScroll - window.innerHeight * 0.58;
+        });
+      }
+      function updateSceneFromScroll(scrollY) {
+        if (beatStarts.length !== beats.length) return;
+        const mapped = chapterProgressAtScroll(scrollY, articleStart, beatStarts, 0.28);
+        uniforms.uProgress.value = mapped.progress;
+        setCaption(mapped.captionIndex, false);
+        render();
+      }
+      function onScrollTriggerUpdate(self) {
+        updateSceneFromScroll(self.scroll());
+      }
+      function onScrollTriggerRefresh() {
+        measureScrollAnchors();
+        updateSceneFromScroll(window.scrollY || window.pageYOffset || 0);
+      }
+      ScrollTrigger.addEventListener("refresh", onScrollTriggerRefresh);
+      ScrollTrigger.create({
+        id: "chapter-one-point-morph",
+        trigger: article,
+        start: "top top",
+        end: "bottom bottom",
+        invalidateOnRefresh: true,
+        onUpdate: onScrollTriggerUpdate,
+      });
+
+      function resize() {
+        const width = Math.max(1, window.innerWidth);
+        const height = Math.max(1, window.innerHeight);
+        const ratio = Math.min(window.devicePixelRatio || 1, 1.35);
+        const articleRight = article.getBoundingClientRect().right;
+        const stageCenterPx = (articleRight + width) * 0.5;
+        renderer.setPixelRatio(ratio);
+        renderer.setSize(width, height, false);
+        camera.aspect = width / height;
+        camera.updateProjectionMatrix();
+        const viewWidth = 2 * camera.position.z * Math.tan(THREE.MathUtils.degToRad(camera.fov * 0.5)) * camera.aspect;
+        const worldPerPixel = viewWidth / width;
+        points.position.x = (stageCenterPx - width * 0.5) * worldPerPixel;
+        const stageWorldWidth = Math.max(1, width - articleRight) * worldPerPixel;
+        points.scale.x = Math.min(1, stageWorldWidth * 0.94 / 5.3);
+        uniforms.uPixelRatio.value = ratio;
+        measureScrollAnchors();
+        updateSceneFromScroll(window.scrollY || window.pageYOffset || 0);
+      }
+      function render() {
+        uniforms.uTime.value = performance.now() * 0.00022;
+        const drift = uniforms.uProgress.value / 6;
+        camera.position.x = Math.sin(drift * Math.PI * 1.4) * 0.11;
+        camera.position.y = Math.cos(drift * Math.PI * 1.2) * 0.055;
+        camera.lookAt(0, 0, 0);
+        renderer.render(scene, camera);
+      }
+      function onContextLost(event) {
+        event.preventDefault();
+        media.revert();
+      }
+      canvas.addEventListener("webglcontextlost", onContextLost, false);
+      window.addEventListener("resize", resize, { passive: true });
+      resize();
+      ScrollTrigger.refresh();
+
+      return function () {
+        body.classList.remove("motion-ready");
+        canvas.removeEventListener("webglcontextlost", onContextLost, false);
+        window.removeEventListener("resize", resize);
+        ScrollTrigger.removeEventListener("refresh", onScrollTriggerRefresh);
+        geometry.dispose();
+        material.dispose();
+        renderer.dispose();
+      };
+    });
+  }
+
+  if (window.gsap && window.ScrollTrigger) {
+    start();
+  } else if (document.readyState !== "complete") {
+    window.addEventListener("load", start, { once: true });
+  }
 })();
 </script></body></html>

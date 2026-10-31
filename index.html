@@ -44,9 +44,21 @@ ol.toc li.cur a .k{color:var(--ink)}
 .cover p{color:var(--dim);font-size:.92em}
 @media(max-width:640px){body{font-size:17px}main{padding:30px 18px 90px}}
 </style></head><body><main>
-<div class="cover"><h1>两汉故事</h1><p>从秦末到汉朝建立 · 全书 14 章<br>底本《史记》《汉书》 · 带脚注 · 可离线阅读</p></div><ol class="toc"><li><a href="ch/intro.html"><span class="k">引子</span>写法与底本</a></li><li><a href="ch/people.html"><span class="k">人物表</span>先认清这些人<span class="s">一张表认清二十来个人</span></a></li><li><a href="ch/01.html"><span class="k">第一章</span>骊山路上：那批人一个接一个地不见了</a></li><li><a href="ch/02.html"><span class="k">第二章</span>大泽乡：九百人误了期</a></li><li><a href="ch/03.html"><span class="k">第三章</span>沛县的难题：谁来做首领</a></li><li><a href="ch/04.html"><span class="k">第四章</span>丰邑之叛：为什么老家的人先反了他</a></li><li><a href="ch/05.html"><span class="k">第五章</span>巨鹿之战：砸掉锅、凿沉船</a></li><li><a href="ch/06.html"><span class="k">第六章</span>刘邦西进：从高阳到霸上</a></li><li><a href="ch/07.html"><span class="k">第七章</span>鸿门宴</a></li><li><a href="ch/08.html"><span class="k">第八章</span>分封与汉中：为什么刘邦成了汉王</a></li><li><a href="ch/09.html"><span class="k">第九章</span>萧何追韩信</a></li><li><a href="ch/10.html"><span class="k">第十章</span>还定三秦与彭城之败</a></li><li><a href="ch/11.html"><span class="k">第十一章</span>荥阳相持：熬</a></li><li><a href="ch/12.html"><span class="k">第十二章</span>韩信北伐：从西河到齐地</a></li><li><a href="ch/13.html"><span class="k">第十三章</span>垓下：四面楚歌</a></li><li><a href="ch/14.html"><span class="k">第十四章</span>氾水之阳：一个亭长成了皇帝</a></li></ol>
+<div class="cover" data-gsap-intro><h1>两汉故事</h1><p>从秦末到汉朝建立 · 全书 14 章<br>底本《史记》《汉书》 · 带脚注 · 可离线阅读</p></div><ol class="toc" data-gsap-list><li><a href="ch/intro.html"><span class="k">引子</span>写法与底本</a></li><li><a href="ch/people.html"><span class="k">人物表</span>先认清这些人<span class="s">一张表认清二十来个人</span></a></li><li><a href="ch/01.html"><span class="k">第一章</span>骊山路上：那批人一个接一个地不见了</a></li><li><a href="ch/02.html"><span class="k">第二章</span>大泽乡：九百人误了期</a></li><li><a href="ch/03.html"><span class="k">第三章</span>沛县的难题：谁来做首领</a></li><li><a href="ch/04.html"><span class="k">第四章</span>丰邑之叛：为什么老家的人先反了他</a></li><li><a href="ch/05.html"><span class="k">第五章</span>巨鹿之战：砸掉锅、凿沉船</a></li><li><a href="ch/06.html"><span class="k">第六章</span>刘邦西进：从高阳到霸上</a></li><li><a href="ch/07.html"><span class="k">第七章</span>鸿门宴</a></li><li><a href="ch/08.html"><span class="k">第八章</span>分封与汉中：为什么刘邦成了汉王</a></li><li><a href="ch/09.html"><span class="k">第九章</span>萧何追韩信</a></li><li><a href="ch/10.html"><span class="k">第十章</span>还定三秦与彭城之败</a></li><li><a href="ch/11.html"><span class="k">第十一章</span>荥阳相持：熬</a></li><li><a href="ch/12.html"><span class="k">第十二章</span>韩信北伐：从西河到齐地</a></li><li><a href="ch/13.html"><span class="k">第十三章</span>垓下：四面楚歌</a></li><li><a href="ch/14.html"><span class="k">第十四章</span>氾水之阳：一个亭长成了皇帝</a></li></ol>
 
-</main><script>
+</main><script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js" integrity="sha384-sG0Hv1tP1lZCk9KQmrIbY/XNwi+OY84GQqhMscbnsoBFqAz8KNCil1kvfL3Hbbk2" crossorigin="anonymous" defer></script><script>
+(function(){
+  document.addEventListener('DOMContentLoaded', function(){
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var cover = document.querySelector('[data-gsap-intro]');
+    var rows = document.querySelectorAll('[data-gsap-list] li');
+    if (!reduce && window.gsap && cover && rows.length) {
+      window.gsap.from(cover, {autoAlpha: 0, y: 12, duration: 0.55, ease: 'power2.out'});
+      window.gsap.from(rows, {autoAlpha: 0, y: 8, duration: 0.32, stagger: 0.035, delay: 0.12, ease: 'power1.out'});
+    }
+  }, {once: true});
+})();
+</script><script>
 (function(){
  var box=document.createElement('div'); box.id='nb';
  box.innerHTML='<span class="x" id="nbx">关闭 ✕</span><span id="nbt"></span>';

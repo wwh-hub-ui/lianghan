@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>萧何追韩信</title>
+<title>萧何追韩信</title><script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js" integrity="sha384-XmJ9SoHtVOHoQUcKvFAzVXwdkKo1Ie3bhmSoIAkcdsHGaIrVJIkmozyq0FJeb/Ly" crossorigin="anonymous"></script><script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js" integrity="sha384-wl5TeDVvOWt30Pbf8aSo2ZrzsOjddu3avOBvHe+p+OhJt9gP6w9YXmDkN5DK2/dF" crossorigin="anonymous"></script>
 <style>
 :root{--ink:#1c1a17;--dim:#6b655d;--line:#ddd6cc;--bg:#faf7f2;--gold:#a8874f}
 *{box-sizing:border-box}
@@ -43,16 +43,49 @@ ol.toc li.cur a .k{color:var(--ink)}
 .cover h1{font-size:2em;margin-bottom:.3em}
 .cover p{color:var(--dim);font-size:.92em}
 @media(max-width:640px){body{font-size:17px}main{padding:30px 18px 90px}}
-</style></head><body><main>
-<h1>萧何追韩信</h1>
-<h2 class="sec">一、一个谁都看不起的人</h2>
+
+body.chapter-story{--ink:#25221d;--dim:#6f675d;--line:#ddd3c3;--bg:#f8f3e8;--gold:#a8874f;background:var(--bg)}
+body.chapter-story main{max-width:none;margin:0;padding:0}
+body.chapter-story .ch1-visual{display:none}
+body.chapter-story .ch1-layout{max-width:46em;margin:0 auto;padding:30px 20px 96px}
+body.chapter-story .ch1-copy{min-width:0}
+body.chapter-story .mobile-scene{display:block;margin:1.35em 0 1.65em}
+body.chapter-story .mobile-scene img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+body.chapter-story .mobile-scene figcaption{font:12px/1.6 system-ui,-apple-system,sans-serif;color:var(--dim);margin-top:7px}
+body.chapter-story .story-beat{scroll-margin-top:18vh}
+body.chapter-story .ch1-scene-caption{display:none}
+@media(min-width:961px) and (prefers-reduced-motion:no-preference){
+ body.chapter-story.motion-ready main{position:relative;z-index:1;padding:22px clamp(28px,3.5vw,60px) 96px}
+ body.chapter-story.motion-ready .ch1-visual{display:block;position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none}
+ body.chapter-story.motion-ready #chapter-canvas{position:absolute;inset:0;width:100%;height:100%;display:block;opacity:.86}
+ body.chapter-story.motion-ready .ch1-wash{position:absolute;inset:0;background:linear-gradient(90deg,rgba(248,243,232,.04) 0%,rgba(248,243,232,.02) 54%,rgba(56,43,28,.09) 100%)}
+ body.chapter-story.motion-ready .ch1-layout{display:grid;grid-template-columns:minmax(430px,45vw) minmax(0,1fr);gap:clamp(34px,5vw,82px);max-width:1500px;margin:0 auto;padding:22px 0 100px}
+ body.chapter-story.motion-ready .ch1-copy{grid-column:1;max-width:680px;padding:28px clamp(26px,3vw,44px);background:rgba(250,247,240,.91);border:1px solid rgba(171,148,112,.28);box-shadow:0 15px 46px rgba(43,32,20,.07);backdrop-filter:blur(6px)}
+ body.chapter-story.motion-ready .ch1-copy h1{font-size:clamp(27px,2.1vw,34px);margin-bottom:1.1em}
+ body.chapter-story.motion-ready .ch1-copy h2.sec{margin-top:2em}
+ body.chapter-story.motion-ready .ch1-scene-caption{display:block;position:fixed;right:clamp(24px,6vw,108px);top:50%;transform:translateY(-50%);width:min(28vw,390px);z-index:2;pointer-events:none;color:#403426;opacity:0}
+ body.chapter-story.motion-ready .scene-kicker{display:block;font:11px/1.5 system-ui,-apple-system,sans-serif;letter-spacing:.16em;color:#75634d;margin-bottom:13px}
+ body.chapter-story.motion-ready .scene-title{display:block;font-size:clamp(23px,2.4vw,38px);font-weight:500;line-height:1.35;text-wrap:balance}
+ body.chapter-story.motion-ready .scene-note{display:block;margin-top:12px;font:12px/1.65 system-ui,-apple-system,sans-serif;color:#756b5d;max-width:28em}
+}
+@media(max-width:960px),(prefers-reduced-motion:reduce){
+ body.chapter-story .ch1-visual,body.chapter-story .ch1-scene-caption{display:none!important}
+ body.chapter-story .ch1-layout{display:block;max-width:43em;padding:30px 20px 88px}
+}
+@media(max-width:640px){
+ body.chapter-story main{font-size:17px}
+ body.chapter-story .ch1-layout{padding:26px 18px 80px}
+}
+</style></head><body class="chapter-story" data-chapter-number="9"><main>
+<div class="ch1-visual" aria-hidden="true"><canvas id="chapter-canvas"></canvas><div class="ch1-wash"></div></div><div id="scene-caption" class="ch1-scene-caption" aria-hidden="true"><span id="scene-kicker" class="scene-kicker">第9章 · 01 / 10</span><strong id="scene-title" class="scene-title">本节标题</strong><span id="scene-note" class="scene-note">粒子由本节小标题生成 · 正文与史料说明保持完整</span></div><div class="ch1-layout"><article class="ch1-copy"><h1>萧何追韩信</h1>
+<section class="story-beat" data-beat="1"><h2 class="sec">一、一个谁都看不起的人</h2><figure class="mobile-scene"><img src="assets/ch09/01-poor-youth.webp" alt="贫困青年在简陋民居前捧碗" loading="lazy"><figcaption>场景重构 · 一个谁都看不起的人</figcaption></figure>
 <p>先说这个人早年的档案，写得很不好看。</p>
 <p>淮阴侯韩信者，淮阴人也。始为布衣时，贫，无行，不得推择为吏；又不能治生商贾。</p>
 <p>韩信任淮阴，还是平头百姓的时候，穷，没有好名声，所以推荐不上去做官；又不会做买卖谋生。</p>
 <p>“无行”两个字挺重的——意思是品行上有问题、口碑不好。他后来的封号是“淮阴侯”，但这时候他什么都不是。</p>
 <p>那靠什么活？《史记》接着说：常从人寄食饮，人多厌之者。</p>
 <p>经常到别人家蹭饭，很多人讨厌他。<sup class="fn" data-n="1">①</sup></p>
-<h2 class="sec">二、亭长家那顿饭</h2>
+</section><section class="story-beat" data-beat="2"><h2 class="sec">二、亭长家那顿饭</h2><figure class="mobile-scene"><img src="assets/ch09/02-empty-meal.webp" alt="室内锅碗已收，一名青年背身离去" loading="lazy"><figcaption>场景重构 · 亭长家那顿饭</figcaption></figure>
 <p>他蹭饭蹭得最久的一家，是下乡南昌亭长家。</p>
 <p>几个月下来，亭长的妻子受不了了。她的办法很讲究：乃晨炊蓐食。</p>
 <p>早早起来做饭，在床上就把饭吃了。<sup class="fn" data-n="2">②</sup></p>
@@ -60,7 +93,7 @@ ol.toc li.cur a .k{color:var(--ink)}
 <p>《史记》写韩信的反应只有八个字：信亦知其意，怒，竟绝去。</p>
 <p>他也知道人家的意思，生气了，从此再没去。</p>
 <p>这一笔很重要。<strong>韩信这辈子有一根很硬的骨头：他可以受穷，但不能受辱。</strong>这一条你记住，后面那件“袴下之辱”才看得懂。</p>
-<h2 class="sec">三、漂母</h2>
+</section><section class="story-beat" data-beat="3"><h2 class="sec">三、漂母</h2><figure class="mobile-scene"><img src="assets/ch09/03-river-meal.webp" alt="河边妇人向青年递饭" loading="lazy"><figcaption>场景重构 · 漂母</figcaption></figure>
 <p>后来他在城下钓鱼。</p>
 <p>那时候河边上有一群妇人在漂洗丝棉——就是“漂母”。其中有一个看见韩信饿着，就把自己的饭分给他吃。</p>
 <p>这一给，给了几十天。</p>
@@ -72,7 +105,7 @@ ol.toc li.cur a .k{color:var(--ink)}
 <p>这段话的分量在哪？</p>
 <p><strong>她没有鼓励他，也没有看得起他。</strong>她说的是实话：一个大小伙子连自己都养不活。而她做的是另一件事：给了几十天的饭，还说不要回报。</p>
 <p>她既看穿了他，也没有嫌弃他。<sup class="fn" data-n="3">③</sup></p>
-<h2 class="sec">四、袴下</h2>
+</section><section class="story-beat" data-beat="4"><h2 class="sec">四、袴下</h2><figure class="mobile-scene"><img src="assets/ch09/04-stare.webp" alt="街头两人相对站立，呈现韩信注视挑衅者的瞬间" loading="lazy"><figcaption>场景重构 · 袴下</figcaption></figure>
 <p>然后是那个流传最广的场面。</p>
 <p>淮阴的街上有个屠户家的少年挑衅韩信，他说：若虽长大，好带刀剑，中情怯耳。</p>
 <p>你虽然长得高大，喜欢带着刀剑，其实心里胆小。</p>
@@ -84,7 +117,7 @@ ol.toc li.cur a .k{color:var(--ink)}
 <p>这个场面被人讲了两千年，都说他在忍。</p>
 <p>我读的时候，最注意的是“孰视之”三个字。<strong>那不是害怕的看，是算账的看。</strong>一个连饭都吃不上、还被人当众逼到这一步的人，看完之后选择爬过去——他算的是“不值当”。</p>
 <p>这跟他后来在战场上做的事是同一路东西：<strong>先算清楚代价，再决定动不动。</strong></p>
-<h2 class="sec">五、他换过三个老板</h2>
+</section><section class="story-beat" data-beat="5"><h2 class="sec">五、他换过三个老板</h2><figure class="mobile-scene"><img src="assets/ch09/05-leave-camp.webp" alt="青年离开军营沿路远行" loading="lazy"><figcaption>场景重构 · 他换过三个老板</figcaption></figure>
 <p>乱世一起来，韩信拿着剑投了项梁。在项梁手下，他“无所知名”——没人知道他。</p>
 <p>项梁死了，他归属项羽。项羽给他一个官：郎中。这是个近侍性质的职位，能见到主帅，但没有实权。</p>
 <p>他“数以策干项羽”，好几次拿计策去说服项羽。</p>
@@ -92,7 +125,7 @@ ol.toc li.cur a .k{color:var(--ink)}
 <p>项梁、项羽都没用他。<sup class="fn" data-n="5">⑤</sup>刘邦进蜀地的时候，韩信从楚营跑出来，投了汉。</p>
 <p>在汉营，他先是当“连敖”——一个接待宾客的小官，仍然没人知道他。<sup class="fn" data-n="6">⑥</sup></p>
 <p><strong>到这时候，他已经换了三个老板，一个都没用他。</strong></p>
-<h2 class="sec">六、差点被砍头的那个瞬间</h2>
+</section><section class="story-beat" data-beat="6"><h2 class="sec">六、差点被砍头的那个瞬间</h2><figure class="mobile-scene"><img src="assets/ch09/06-spared.webp" alt="青年跪坐仰望举手的夏侯婴" loading="lazy"><figcaption>场景重构 · 差点被砍头的那个瞬间</figcaption></figure>
 <p>然后在汉营出了事。</p>
 <p>韩信犯了法，按律当斩。同一批被斩的已经有十三个人死了，轮到韩信。</p>
 <p>他抬起头，正好看见滕公。滕公就是夏侯婴——刘邦的老乡兼司机（他后来的职务是太仆，管车马），鸿门宴那天跟着刘邦一起走小路回来的四个人之一。</p>
@@ -107,7 +140,7 @@ ol.toc li.cur a .k{color:var(--ink)}
 <p><strong>真正看出他有本事的人，是另一个人。</strong></p>
 <p>韩信好几次跟萧何谈话，萧何的反应是三个字：何奇之。</p>
 <p>萧何觉得他不寻常。<sup class="fn" data-n="8">⑧</sup></p>
-<h2 class="sec">七、跑掉的人</h2>
+</section><section class="story-beat" data-beat="7"><h2 class="sec">七、跑掉的人</h2><figure class="mobile-scene"><img src="assets/ch09/07-pursuit.webp" alt="萧何在山路上追赶离去的韩信" loading="lazy"><figcaption>场景重构 · 跑掉的人</figcaption></figure>
 <p>第八章说过那个局面：到了南郑，汉军的将领和士兵大批往东跑。</p>
 <p>《史记》在这一段给了个数字：诸将行道亡者数十人。</p>
 <p>路上跑掉的将领有几十个。</p>
@@ -121,7 +154,7 @@ ol.toc li.cur a .k{color:var(--ink)}
 <p>大怒，像失去了左右手一样。<sup class="fn" data-n="10">⑩</sup></p>
 <p><strong>注意这个比喻。</strong>跑了十几个将领，刘邦没什么反应；萧何一跑，他的反应是“失去了左右手”。</p>
 <p>这时候刘邦还不知道萧何是去追人的。</p>
-<h2 class="sec">八、追回来了</h2>
+</section><section class="story-beat" data-beat="8"><h2 class="sec">八、追回来了</h2><figure class="mobile-scene"><img src="assets/ch09/08-recommendation.webp" alt="萧何向刘邦举荐韩信" loading="lazy"><figcaption>场景重构 · 追回来了</figcaption></figure>
 <p>过了一两天，萧何回来见刘邦。</p>
 <p>刘邦又气又高兴，骂他：若亡，何也？</p>
 <p>你也跑了，为什么？</p>
@@ -153,11 +186,11 @@ ol.toc li.cur a .k{color:var(--ink)}
 <p>刘邦答应了。<sup class="fn" data-n="13">⑬</sup></p>
 <p><strong>萧何在这件事上干了两件事</strong>：一是替刘邦认定了这个人，二是逼刘邦把这件事<strong>做出分量来</strong>。</p>
 <p>他很清楚：让一个跑了三个老板的人留下来，靠的不是给他官，是让他看见这个官有多重。</p>
-<h2 class="sec">九、登坛那天</h2>
+</section><section class="story-beat" data-beat="9"><h2 class="sec">九、登坛那天</h2><figure class="mobile-scene"><img src="assets/ch09/09-appointment.webp" alt="韩信登上土坛，众将看向台上" loading="lazy"><figcaption>场景重构 · 登坛那天</figcaption></figure>
 <p>《史记》写了那天的场面：诸将皆喜，人人各自以为得大将。至拜大将，乃韩信也，一军皆惊。</p>
 <p>将领们都很高兴，每个人都以为大将就是自己。等到登坛拜将，一看，是韩信。全军都吃了一惊。<sup class="fn" data-n="14">⑭</sup></p>
 <p><strong>“一军皆惊”四个字，把韩信此刻的处境写完了</strong>：他要带的这支军队，没有一个人听说过他。</p>
-<h2 class="sec">十、那场对话</h2>
+</section><section class="story-beat" data-beat="10"><h2 class="sec">十、那场对话</h2><figure class="mobile-scene"><img src="assets/ch09/10-strategy.webp" alt="韩信与刘邦在低案两侧议事" loading="lazy"><figcaption>场景重构 · 那场对话</figcaption></figure>
 <p>拜将的典礼结束，刘邦坐定，问了一句：丞相数言将军，将军何以教寡人计策？</p>
 <p>丞相好几次提到将军，将军有什么可以教我的？</p>
 <p>韩信先谢过，然后反问：今东乡争权天下，岂非项王邪？</p>
@@ -206,8 +239,8 @@ ol.toc li.cur a .k{color:var(--ink)}
 <p>一年前，他在鸿门低着头向项羽谢罪。半年前，他被封到汉中，烧了栈道。现在他手上有萧何管钱粮、有张良出主意、有樊哙肯拼命，还有一个他直到几个月前都不认识的人。</p>
 <p>同年八月，汉王出兵往东，走陈仓。</p>
 <p>下一章：还定三秦与彭城之败。</p>
-<hr/>
-<nav><a href="08.html">← 第八章</a><a class="dir" href="../index.html">目录</a><a href="10.html">下一章：还定三秦与彭城之败 →</a></nav>
+<hr/></section><nav><a href="08.html">← 第八章</a><a class="dir" href="../index.html">目录</a><a href="10.html">下一章：还定三秦与彭城之败 →</a></nav></article></div>
+
 </main><script>window.NOTES=["原文：“始为布衣时，贫，无行，不得推择为吏；又不能治生商贾。常从人寄食饮，人多厌之者。”", "原文：“常数从其下乡南昌亭长寄食，数月，亭长妻患之，乃晨炊蓐食。”“蓐食”是在床席上就把饭吃完，避开吃饭时间。", "原文：“信钓于城下，诸母漂，有一母见信饥，饭信，竟漂数十日。”漂母，是漂洗丝棉的妇人。", "原文：“淮阴屠中少年有侮信者，曰：'若虽长大，好带刀剑，中情怯耳。'众辱之曰：'信能死，刺我；不能死，出我袴下。'于是信孰视之，俛出袴下，蒲伏。”", "原文：“及项梁渡淮，信杖剑从之，居麾下，无所知名。项梁败，又属项羽，羽以为郎中。数以策干项羽，羽不用。”", "原文：“汉王之入蜀，信亡楚归汉，未得知名，为连敖。”连敖是楚官名，在汉营大约是接待宾客一类的小官。", "滕公就是夏侯婴，沛人，刘邦的老乡。“滕公”是当时人对他的称呼。原文：“坐法当斩，其辈十三人皆已斩，次至信，信乃仰视，适见滕公，曰：'上不欲就天下乎？何为斩壮士！'滕公奇其言，壮其貌，释而不斩。与语，大说之。”", "原文：“言于上，上拜以为治粟都尉，上未之奇也。信数与萧何语，何奇之。”", "原文：“至南郑，诸将行道亡者数十人。信度何等已数言上，上不我用，即亡。”", "原文：“何闻信亡，不及以闻，自追之。人有言上曰：'丞相何亡。'上大怒，如失左右手。”", "原文：“上复骂曰：'诸将亡者以十数，公无所追；追信，诈也。'何曰：'诸将易得耳。至如信者，国士无双。王必欲长王汉中，无所事信；必欲争天下，非信无所与计事者。顾王策安所决耳。'”", "原文：“王曰：'吾亦欲东耳，安能郁郁久居此乎？'何曰：'王计必欲东，能用信，信即留；不能用，信终亡耳。'”", "原文：“何曰：'王素慢，无礼，今拜大将如呼小儿耳，此乃信所以去也。王必欲拜之，择良日，斋戒，设坛场，具礼，乃可耳。'王许之。”", "原文：“诸将皆喜，人人各自以为得大将。至拜大将，乃韩信也，一军皆惊。”", "原文：“王曰：'丞相数言将军，将军何以教寡人计策？'信谢，因问王曰：'今东乡争权天下，岂非项王邪？'汉王曰：'然。'曰：'大王自料勇悍仁彊孰与项王？'汉王默然良久，曰：'不如也。'”", "原文：“项王喑噁叱咤，千人皆废，然不能任属贤将，此特匹夫之勇耳。项王见人恭敬慈爱，言语呕呕，人有疾病，涕泣分食饮；至使人有功当封爵者，印刓敝，忍不能予。此所谓妇人之仁也。”", "原文：“项王虽霸天下而臣诸侯，不居关中而都彭城。有背义帝之约而以亲爱王，诸侯不平。诸侯之见项王迁逐义帝，置江南，亦皆归逐其主而自王善地。项王所过，无不残灭者，天下多怨，百姓不亲附，特劫于威，强耳。名虽为霸，实失天下心。故曰其强易弱。”", "原文：“且三秦王为秦将……秦父兄怨此三人，痛入骨髓。今楚强以威王此三人，秦民莫爱也。大王之入武关，秋豪无所害，除秦苛法，与秦民约法三章耳。秦民无不欲得大王王秦者。于诸侯之约，大王当王关中，关中民咸知之。大王失职入汉中，秦民无不恨者。今大王举而东，三秦可传檄而定也。”于是汉王大喜，自以为得信晚。遂听信计，部署诸将所击。"];</script><script>
 (function(){
  var box=document.createElement('div'); box.id='nb';
@@ -222,5 +255,272 @@ ol.toc li.cur a .k{color:var(--ink)}
  });
  document.getElementById('nbx').addEventListener('click', function(){ box.classList.remove('on'); });
  document.addEventListener('keydown', function(e){ if(e.key==='Escape') box.classList.remove('on'); });
+})();
+</script><script type="module">import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.186.1/build/three.module.js";
+import { chapterProgressAtScroll } from "./assets/ch01/chapter_one_progress.mjs";
+import { particleTargetFromMask } from "./assets/chapter_story_targets.mjs";
+
+(function () {
+  const mediaQuery = "(min-width:961px) and (prefers-reduced-motion: no-preference)";
+  const chapterNumber = Number(document.body.dataset.chapterNumber) || 0;
+
+  function start() {
+    if (!window.gsap || !window.ScrollTrigger) return;
+    gsap.registerPlugin(ScrollTrigger);
+    const body = document.body;
+    const media = gsap.matchMedia();
+
+    media.add(mediaQuery, function () {
+      const canvas = document.getElementById("chapter-canvas");
+      const article = document.querySelector(".ch1-copy");
+      const beats = Array.from(document.querySelectorAll(".story-beat"));
+      const caption = document.getElementById("scene-caption");
+      const kicker = document.getElementById("scene-kicker");
+      const title = document.getElementById("scene-title");
+      const note = document.getElementById("scene-note");
+      if (!canvas || !article || beats.length === 0 || beats.length > 10) return;
+
+      const labels = beats.map((beat) => beat.querySelector("h2.sec")?.textContent.trim() || "本节");
+      let renderer;
+      try {
+        renderer = new THREE.WebGLRenderer({
+          canvas,
+          alpha: true,
+          antialias: true,
+          powerPreference: "low-power",
+        });
+      } catch (_error) {
+        return;
+      }
+
+      const pixelRatio = Math.min(window.devicePixelRatio || 1, 1.35);
+      const pointCount = window.innerWidth < 1200 ? 12000 : 16000;
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(38, 1, 0.1, 50);
+      camera.position.set(0, 0, 7.8);
+      camera.lookAt(0, 0, 0);
+      renderer.setPixelRatio(pixelRatio);
+      renderer.setSize(window.innerWidth, window.innerHeight, false);
+      renderer.setClearColor(0x000000, 0);
+      renderer.outputColorSpace = THREE.SRGBColorSpace;
+
+      function random(index, salt) {
+        const value = Math.sin((index + 1) * 12.9898 + (salt + 1) * 78.233) * 43758.5453;
+        return value - Math.floor(value);
+      }
+      function writePoint(target, index, x, y, z) {
+        const offset = index * 3;
+        target[offset] = x;
+        target[offset + 1] = y;
+        target[offset + 2] = z;
+      }
+      function makeInitialCloud(count) {
+        const positions = new Float32Array(count * 3);
+        for (let i = 0; i < count; i += 1) {
+          writePoint(positions, i, (random(i, 11) - 0.5) * 5.2, (random(i, 12) - 0.5) * 2.4, (random(i, 13) - 0.5) * 1.1);
+        }
+        return positions;
+      }
+      function makeTextTarget(label, count, salt) {
+        const mask = document.createElement("canvas");
+        mask.width = 920;
+        mask.height = 270;
+        const context = mask.getContext("2d", { willReadFrequently: true });
+        if (!context) throw new Error("Canvas 2D mask context is unavailable");
+        context.clearRect(0, 0, mask.width, mask.height);
+        context.fillStyle = "#fff";
+        context.textAlign = "center";
+        context.textBaseline = "middle";
+        let size = 92;
+        const fontStack = '"Songti SC", "Noto Serif CJK SC", "STSong", serif';
+        while (size > 44) {
+          context.font = `600 ${size}px ${fontStack}`;
+          if (context.measureText(label).width <= 840) break;
+          size -= 4;
+        }
+        context.font = `600 ${size}px ${fontStack}`;
+        context.fillText(label, mask.width * 0.5, mask.height * 0.5, 840);
+        const image = context.getImageData(0, 0, mask.width, mask.height);
+        return particleTargetFromMask(image.data, mask.width, mask.height, count, salt);
+      }
+
+      const initial = makeInitialCloud(pointCount);
+      const targets = labels.map((label, index) => makeTextTarget(label, pointCount, index + chapterNumber * 17));
+      const seeds = new Float32Array(pointCount);
+      for (let i = 0; i < pointCount; i += 1) seeds[i] = random(i, chapterNumber + 31);
+
+      const geometry = new THREE.BufferGeometry();
+      geometry.setAttribute("position", new THREE.BufferAttribute(initial, 3));
+      targets.forEach((target, index) => geometry.setAttribute(`aShape${index + 1}`, new THREE.BufferAttribute(target, 3)));
+      geometry.setAttribute("aSeed", new THREE.BufferAttribute(seeds, 1));
+      geometry.computeBoundingSphere();
+
+      const uniforms = {
+        uProgress: { value: 0 },
+        uTime: { value: 0 },
+        uPixelRatio: { value: pixelRatio },
+      };
+      const shapeAttributes = targets.map((_target, index) => `attribute vec3 aShape${index + 1};`).join("\n");
+      const shapeBranches = targets.map((_target, index) => `if (shapeIndex < ${index + 1}.5) return aShape${index + 1};`).join("\n          ");
+      const lastShape = targets.length;
+      const vertexShader = `
+        precision highp float;
+        ${shapeAttributes}
+        attribute float aSeed;
+        uniform float uProgress;
+        uniform float uTime;
+        uniform float uPixelRatio;
+        varying float vAlpha;
+        varying vec3 vColor;
+        const float PI = 3.14159265359;
+
+        vec3 curlField(vec3 p, float t) {
+          return vec3(
+            -1.2 * sin(p.x * 1.4 + t) * sin(p.y * 1.2 - t) - 1.5 * cos(p.z * 1.5 - t) * cos(p.x * 1.1 + t),
+            -1.3 * sin(p.y * 1.7 + t) * sin(p.z * 1.3 - t) - 1.4 * cos(p.x * 1.4 + t) * cos(p.y * 1.2 - t),
+            -1.1 * sin(p.z * 1.5 - t) * sin(p.x * 1.1 + t) - 1.7 * cos(p.y * 1.7 + t) * cos(p.z * 1.3 - t)
+          );
+        }
+        vec3 shapeAt(float shapeIndex) {
+          if (shapeIndex < 0.5) return position;
+          ${shapeBranches}
+          return aShape${lastShape};
+        }
+        void main() {
+          float progress = clamp(uProgress, 0.0, ${lastShape.toFixed(1)});
+          float segment = min(floor(progress), ${(lastShape - 1).toFixed(1)});
+          float localProgress = clamp(progress - segment, 0.0, 1.0);
+          vec3 fromShape = shapeAt(segment);
+          vec3 toShape = shapeAt(segment + 1.0);
+          vec3 p = mix(fromShape, toShape, smoothstep(0.0, 1.0, localProgress));
+          float turbulence = sin(localProgress * PI) * 0.30;
+          p += curlField(p + vec3(aSeed * 1.5), uTime + aSeed * 2.2) * turbulence;
+          vec4 mvPosition = modelViewMatrix * vec4(p, 1.0);
+          gl_Position = projectionMatrix * mvPosition;
+          gl_PointSize = clamp((1.5 + aSeed * 2.8) * uPixelRatio * (6.5 / max(1.0, -mvPosition.z)), 1.1, 5.4 * uPixelRatio);
+          float warm = 0.22 + 0.38 * (0.5 + 0.5 * sin(progress * 0.55 + aSeed * 7.0));
+          vColor = mix(vec3(0.15, 0.12, 0.09), vec3(0.48, 0.33, 0.18), warm);
+          vAlpha = 0.50 + aSeed * 0.38 + turbulence * 0.18;
+        }
+      `;
+      const fragmentShader = `
+        precision highp float;
+        varying float vAlpha;
+        varying vec3 vColor;
+        void main() {
+          float radius = length(gl_PointCoord - vec2(0.5));
+          float soft = 1.0 - smoothstep(0.08, 0.5, radius);
+          if (soft < 0.015) discard;
+          gl_FragColor = vec4(vColor, soft * vAlpha);
+          #include <colorspace_fragment>
+        }
+      `;
+      const material = new THREE.ShaderMaterial({
+        uniforms,
+        vertexShader,
+        fragmentShader,
+        transparent: true,
+        depthWrite: false,
+        blending: THREE.NormalBlending,
+      });
+      const points = new THREE.Points(geometry, material);
+      points.frustumCulled = false;
+      scene.add(points);
+
+      body.classList.add("motion-ready");
+      let currentCaption = -1;
+      function setCaption(index, immediate) {
+        if (index < 0 || index >= labels.length || index === currentCaption) return;
+        currentCaption = index;
+        kicker.textContent = `第${chapterNumber}章 · ${String(index + 1).padStart(2, "0")} / ${String(labels.length).padStart(2, "0")}`;
+        title.textContent = labels[index];
+        note.textContent = "粒子由本节小标题生成 · 正文与史料说明保持完整";
+        gsap.killTweensOf(caption);
+        if (immediate) {
+          gsap.set(caption, { autoAlpha: 1 });
+          return;
+        }
+        gsap.set(caption, { autoAlpha: 0 });
+        gsap.to(caption, { autoAlpha: 1, duration: 0.32, ease: "power2.out", overwrite: true });
+      }
+      setCaption(0, true);
+
+      let articleStart = 0;
+      let beatStarts = [];
+      function measureScrollAnchors() {
+        const currentScroll = window.scrollY || window.pageYOffset || 0;
+        articleStart = article.getBoundingClientRect().top + currentScroll;
+        beatStarts = beats.map((beat) => beat.getBoundingClientRect().top + currentScroll - window.innerHeight * 0.58);
+      }
+      function updateSceneFromScroll(scrollY) {
+        if (beatStarts.length !== beats.length) return;
+        const mapped = chapterProgressAtScroll(scrollY, articleStart, beatStarts, 0.28);
+        uniforms.uProgress.value = mapped.progress;
+        setCaption(mapped.captionIndex, false);
+        render();
+      }
+      function onScrollTriggerUpdate(self) {
+        updateSceneFromScroll(self.scroll());
+      }
+      function onScrollTriggerRefresh() {
+        measureScrollAnchors();
+        updateSceneFromScroll(window.scrollY || window.pageYOffset || 0);
+      }
+      ScrollTrigger.addEventListener("refresh", onScrollTriggerRefresh);
+      ScrollTrigger.create({
+        id: `chapter-${chapterNumber}-point-morph`,
+        trigger: article,
+        start: "top top",
+        end: "bottom bottom",
+        invalidateOnRefresh: true,
+        onUpdate: onScrollTriggerUpdate,
+      });
+
+      function resize() {
+        const width = Math.max(1, window.innerWidth);
+        const height = Math.max(1, window.innerHeight);
+        const ratio = Math.min(window.devicePixelRatio || 1, 1.35);
+        const articleRight = article.getBoundingClientRect().right;
+        const stageCenterPx = (articleRight + width) * 0.5;
+        renderer.setPixelRatio(ratio);
+        renderer.setSize(width, height, false);
+        camera.aspect = width / height;
+        camera.updateProjectionMatrix();
+        const viewWidth = 2 * camera.position.z * Math.tan(THREE.MathUtils.degToRad(camera.fov * 0.5)) * camera.aspect;
+        const worldPerPixel = viewWidth / width;
+        points.position.x = (stageCenterPx - width * 0.5) * worldPerPixel;
+        const stageWorldWidth = Math.max(1, width - articleRight) * worldPerPixel;
+        points.scale.x = Math.min(1, stageWorldWidth * 0.94 / 5.2);
+        uniforms.uPixelRatio.value = ratio;
+        measureScrollAnchors();
+        updateSceneFromScroll(window.scrollY || window.pageYOffset || 0);
+      }
+      function render() {
+        uniforms.uTime.value = performance.now() * 0.00022;
+        renderer.render(scene, camera);
+      }
+      function onContextLost(event) {
+        event.preventDefault();
+        media.revert();
+      }
+      canvas.addEventListener("webglcontextlost", onContextLost, false);
+      window.addEventListener("resize", resize, { passive: true });
+      resize();
+      ScrollTrigger.refresh();
+
+      return function () {
+        body.classList.remove("motion-ready");
+        canvas.removeEventListener("webglcontextlost", onContextLost, false);
+        window.removeEventListener("resize", resize);
+        ScrollTrigger.removeEventListener("refresh", onScrollTriggerRefresh);
+        geometry.dispose();
+        material.dispose();
+        renderer.dispose();
+      };
+    });
+  }
+
+  if (window.gsap && window.ScrollTrigger) start();
+  else if (document.readyState !== "complete") window.addEventListener("load", start, { once: true });
 })();
 </script></body></html>
